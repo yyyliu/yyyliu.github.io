@@ -1,0 +1,44 @@
+{
+  "name": "personal-homepage",
+  "version": "1.0.0",
+  "description": "My personal homepage.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyyliu/yyyliu.github.io"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run prebuild && npm run webpack-prod",
+    "dev": "npm run prebuild && npm run webpack-dev",
+    "prebuild": "rm -rf build && mkdir build && cp -R assets/ build",
+    "webpack-dev": "NODE_ENV=development webpack --progress --hide-modules",
+    "webpack-prod": "NODE_ENV=production webpack --progress --hide-modules",
+    "start": "python -m SimpleHTTPServer 8080"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-vue": "^2.0.0-rc.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "vue": "^2.5.14",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
+    "font-awesome-loader": "^1.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.14",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
+  }
+}
