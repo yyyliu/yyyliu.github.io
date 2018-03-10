@@ -4,4 +4,4 @@ assets/
 .babelrc
 package.json
 webpack.config.js
-
+\.idea/
