@@ -38,7 +38,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            publicPath: '/'
+            publicPath: '/build/'
           }
         }]
       },
