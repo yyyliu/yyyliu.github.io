@@ -62,7 +62,7 @@ const bio = [
     {text: ' University of Washington', url: 'https://www.cs.washington.edu/'},
     {text: '. I work in the area of Information Visualization and HCI, advised by Prof.'},
     {text: ' Jeffery Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
-    {text: '. My research interests are in the area of visualization and human-computer interaction.'}
+    {text: '. My recent research interests include graphical perception, exploratory data analysis and visualizing machine learning models.'}
   ],
   [
     {text: 'In the past, I have been affiliated with the'},
