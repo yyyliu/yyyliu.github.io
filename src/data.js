@@ -1,5 +1,19 @@
 const projects = [
   {
+    url: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf',
+    image: '/build/images/chi18.png',
+    legend: 'Error rate by span and reference for assorted colormaps. Points indicate bootstrapped means, along with 50% (thick) and 95% (thin) CIs. Each sub-plot includes the mean value for each span level (dotted grey line). Viridis exhibits consistently low error across the board. The accuracy of blues matches that of viridis at larger spans, but drops notably for the smallest span. The blueorange diverging scheme exhibits errors when comparison is made across the central blue-orange hue boundary.',
+    title: 'Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps',
+    descriptions: [
+      'Quantitative color encodings are common in visualizations, but not all of them effectively represent data. In this paper, we contribute a comparative analysis of 9 colormaps. In our experiments, people judged relative distance among color triplets. We found that judiciously designed multi-hue colormaps perform well in time and error. Single-hue colormaps also perform well despite resolution issues. We also identified recurring issues, such as poor performance for low luminance regions on a white background.',
+      'It appears in ACM Human Factors in Computing Systems (CHI), 2018.'
+    ],
+    buttons: [
+      {name: 'paper', link: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf', icon: 'fa-file-o'},
+      {name: 'bibtex', link: 'http://idl.cs.washington.edu/bibtex/quantitative-color', icon: 'fa-quote-left'}
+    ]
+  },
+  {
     url: 'https://altizure.com',
     embed: 'https://site.altizure.com/project/54ed7ff541fbfa3e1967fc78/model/embed#autoplay=false&lights=off',
     title: 'Altizure',
@@ -20,7 +34,7 @@ const projects = [
     title: 'Embedding Temporal Display into Map',
     descriptions: [
       'This paper tried to visualize spatio-temporal data in-place while minimizing occlusion or distortion. Inspired by an algorithm in Computer Graphics, we thought about seamlessly enlarging the roads on a raster map, so we could place time series plots directly on roads where the events occurred. In this work, I drafted the whole paper, proposed the visual principles and designs, came up with the case study stories, and carefully designed the user studies.',
-      'It was published on IEEE Pacific Visualization Symposium (PacificVis), 2014.'
+      'It appears in IEEE Pacific Visualization Symposium (PacificVis), 2014.'
     ],
     buttons: [
       {name: 'paper', link: '/build/misc/pvis14.pdf', icon: 'fa-file-o'}

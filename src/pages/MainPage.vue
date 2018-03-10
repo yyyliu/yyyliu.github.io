@@ -33,40 +33,43 @@
               </span>
             </p>
 
-            <!--Email-->
-            <p class="mt-3">
-            <span class="mr-3">
-              <i class="fa fa-fw fa-envelope-o"></i>
-            </span>
-              <span class="mr-3 text-bold">Email</span>
-              <a href="mailto:yliu0@cs.washington.edu" class="link-primary">
-                yliu0@cs.washington.edu
-              </a>
-            </p>
-
-            <!--Resume-->
-            <p>
-            <span class="mr-3">
-              <i class="fa fa-fw fa-download"></i>
-            </span>
-              <span class="mr-3 text-bold">Resume</span>
-              <a href="/build/misc/resume_LiuYang.pdf" class="link-primary" target="_blank">
-                download
-              </a>
+            <!--Contact-->
+            <div class="text-bold mt-3">CONTACT ME</div>
+            <p class="mt-1">
+              <span class="mr-1">
+                <a href="mailto:yliu0@cs.washington.edu" class="text-dark">
+                  Email
+                </a>
+              </span>
+              |
+              <span class="ml-1 mr-1">
+                <a href="/build/misc/resume_LiuYang.pdf" class="text-dark" target="_blank">
+                  Resume
+                </a>
+              </span>
+              |
+              <span class="ml-1">
+                <a href="https://github.com/yyyliu" class="text-dark" target="_blank">
+                  GitHub
+                </a>
+              </span>
             </p>
           </div>
         </div>
 
         <!--Project-->
         <div class="mt-5"></div>
+        <h3 class="mb-3">PROJECTS</h3>
         <div class="yyy-card" v-for="p in projects">
           <a :href="p.url" target="_blank" v-if="p.image">
             <img :src="p.image" :alt="p.title" class="image-responsive"/>
           </a>
+          <div class="text-xs text-justify text-muted pl-3 pr-3 mt-3"
+               v-if="p.legend">{{p.legend}}</div>
           <div v-if="p.embed" class="embed-responsive embed-responsive-narrow">
             <iframe :src="p.embed" style="border:none;width:100%;"></iframe>
           </div>
-          <h3 class="mt-5">{{p.title}}</h3>
+          <h3 class="mt-4">{{p.title}}</h3>
           <div class="mt-3"></div>
           <p v-for="d in p.descriptions" class="text-justify">
             {{d}}
@@ -77,7 +80,7 @@
                :class="b.icon"
                :href="b.link"
                target="_blank">{{b.name}}</a>
-            <small v-if="p.ps" class="ml-3 text-muted text-xs">
+            <small v-if="p.ps" class="text-muted text-xs">
               {{p.ps}}
             </small>
           </div>
