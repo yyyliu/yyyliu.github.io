@@ -10,6 +10,7 @@ const projects = [
     ],
     buttons: [
       {name: 'paper', link: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf', icon: 'fa-file-o'},
+      {name: 'data', link: 'https://github.com/uwdata/quantitative-color-data', icon: 'fa-table'},
       {name: 'bibtex', link: 'http://idl.cs.washington.edu/bibtex/quantitative-color', icon: 'fa-quote-left'}
     ]
   },
@@ -62,7 +63,7 @@ const bio = [
     {text: ' University of Washington', url: 'https://www.cs.washington.edu/'},
     {text: '. I work in the area of Information Visualization and HCI, advised by Prof.'},
     {text: ' Jeffery Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
-    {text: '. My recent research interests include graphical perception, exploratory data analysis and visualizing machine learning models.'}
+    {text: '. Specific topics include graphical perception, exploratory data analysis and visualizing machine learning models.'}
   ],
   [
     {text: 'In the past, I have been affiliated with the'},
