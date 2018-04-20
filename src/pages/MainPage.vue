@@ -43,8 +43,8 @@
               </span>
               |
               <span class="ml-1 mr-1">
-                <a href="/build/misc/resume_LiuYang.pdf" class="text-dark" target="_blank">
-                  Resume
+                <a href="/#/cv" class="text-dark" target="_blank">
+                  CV
                 </a>
               </span>
               |
