@@ -49,7 +49,7 @@
               <div class="cv-heading">{{w.title}}</div>
               <div class="cv-location">{{w.location}}</div>
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mb-1">
               <div class="cv-role">{{w.role}}</div>
               <div class="cv-time">{{getTime(w)}}</div>
             </div>
@@ -130,12 +130,12 @@
 
 <style>
   .cv {
-    width: 802px;
     background-color: #fff;
-    padding-top: 40px;
-    padding-bottom: 250px;
+    width: 842px;
+    padding-top: 60px;
+    padding-bottom: 180px;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 16px;
     color: #33383f;
   }
 
@@ -161,28 +161,28 @@
 
   .cv-subtitle {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .cv-heading {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .cv-location {
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
   }
 
   .cv-time {
     font-style: italic;
     color: #757776;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .cv-role {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 300;
   }
