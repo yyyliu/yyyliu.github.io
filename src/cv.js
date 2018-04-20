@@ -13,12 +13,13 @@ const education = [
     advisor: 'Jeffrey Heer'
   },
   {
-    hide: 'true',
     name: 'Carnegie Mellon University',
-    degree: 'TODO',
+    degree: 'M.S. Electrical and Computer Engineering',
     start: '2017 Jan',
     end: '2017 May',
-    location: 'Pittsburgh, PA'
+    location: 'Pittsburgh, PA',
+    gpa: '4.0/4.0',
+    desc: 'Completed 12 credits'
   },
   {
     name: 'Hong Kong University of Science and Technology',
@@ -35,7 +36,7 @@ const education = [
     degree: 'B.S. Biochemistry',
     start: '2008 Sep 1',
     location: 'Hong Kong',
-    end: '2012 Jun 31',
+    end: '2012 Jun',
     gpa: '3.95/4.3',
     desc: 'First Class Honor'
   },
@@ -85,7 +86,6 @@ const work = [
     desc: [
       'Designed, prototyped and implemented a web platform from scratch as the very first developers in the team, which now grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
       'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map  of 100km2 in area, which employed Level of detail rendering based on a quadtree to maintain interactive framerates across all platforms, as well as various compression methods for fast loading.',
-      'Proposed and developed numerous business features from front-end to back-end.',
       'Built a desktop viewer on Windows, Mac and Linux for downloading 3D models and viewing offline.',
       'Involved in building a distributed system running reconstruction jobs in parallel on an in-house cluster.'
     ]
@@ -116,7 +116,7 @@ const awards = [
   {
     name: 'Postgraduate Studentship',
     desc: 'HKUST',
-    time: '2012-2014'
+    time: '2013-2014'
   },
   {
     name: 'Academic Achievement Medal',
