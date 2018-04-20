@@ -31,6 +31,7 @@
     "css-loader": "^0.28.10",
     "file-loader": "^1.1.11",
     "font-awesome-loader": "^1.0.2",
+    "moment": "^2.22.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
@@ -38,7 +39,6 @@
     "url-loader": "^1.0.1",
     "vue-loader": "^14.2.1",
     "vue-template-compiler": "^2.5.14",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.10"
+    "webpack": "^3.11.0"
   }
 }
