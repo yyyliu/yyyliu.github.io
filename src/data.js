@@ -11,7 +11,8 @@ const projects = [
     buttons: [
       {name: 'paper', link: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf', icon: 'fa-file-o'},
       {name: 'data', link: 'https://github.com/uwdata/quantitative-color-data', icon: 'fa-table'},
-      {name: 'bibtex', link: 'http://idl.cs.washington.edu/bibtex/quantitative-color', icon: 'fa-quote-left'}
+      {name: 'bibtex', link: 'http://idl.cs.washington.edu/bibtex/quantitative-color', icon: 'fa-quote-left'},
+      {name: 'slides', link: '/build/misc/chi18-colormaps.pdf', icon: 'fa-image'}
     ]
   },
   {
