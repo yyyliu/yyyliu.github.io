@@ -42,7 +42,7 @@
 
       <!--Job-->
       <div>
-        <section-header title="Industry Experience"></section-header>
+        <section-header title="Employment"></section-header>
         <div v-for="w in work" class="text-justify">
           <div class="mb-3">
             <div class="d-flex justify-content-between">
@@ -56,6 +56,18 @@
             <ul class="cv-list">
               <li v-for="d in w.desc">{{d}}</li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Service-->
+      <div>
+        <section-header title="Service and Involvement"></section-header>
+        <div v-for="s in service" class="mb-2 d-flex">
+          <div class="cv-alt-time">{{s.time}}</div>
+          <div class="w-100">
+            <div><b>{{s.name}}</b></div>
+            <div>{{s.desc}}</div>
           </div>
         </div>
       </div>
@@ -86,7 +98,7 @@
 </template>
 
 <script>
-  import {meta, education, papers, work, awards, teaching} from '../cv'
+  import {meta, education, papers, work, awards, teaching, service} from '../cv'
   import SectionHeader from '../components/SectionHeader.vue'
   import moment from 'moment'
   import _ from 'lodash'
@@ -102,6 +114,7 @@
         education: education,
         papers: papers,
         work: work,
+        service: service,
         awards: awards,
         teaching: teaching
       }
@@ -205,7 +218,7 @@
   }
 
   .cv-alt-time {
-    width: 100px;
-
+    font-weight: 300;
+    width: 135px;
   }
 </style>

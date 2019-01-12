@@ -104,6 +104,26 @@ const work = [
   }
 ]
 
+/** template:
+ {
+    name: '',
+    time: '',
+    desc: ''
+ }
+ */
+const service = [
+  {
+    name: 'Graduate Admission Committee',
+    time: '2019',
+    desc: 'Served on the committee to review graduate applications to the Allen School of Computer Science at the University of Washington.'
+  },
+  {
+    name: 'Co-Organizer: Interactive Systems Seminar',
+    time: '2018 - Present',
+    desc: 'Co-organized a weekly seminar for reading and discussing HCI papers, at the University of Washington.'
+  }
+]
+
 /**
  * Template
  {
@@ -116,7 +136,7 @@ const awards = [
   {
     name: 'Postgraduate Studentship',
     desc: 'HKUST',
-    time: '2013-2014'
+    time: '2013 - 2014'
   },
   {
     name: 'Academic Achievement Medal',
@@ -126,7 +146,7 @@ const awards = [
   {
     name: 'University Scholarship, School of Science Scholarship, D H Chen Foundation Scholarship',
     desc: 'HKUST',
-    time: '2008-2012'
+    time: '2008 - 2012'
   },
   {
     name: 'Gold Medal',
@@ -164,4 +184,4 @@ const teaching = [
   }
 ]
 
-export {meta, education, papers, work, awards, teaching}
+export {meta, education, papers, work, awards, teaching, service}
