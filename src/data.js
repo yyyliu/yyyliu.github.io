@@ -17,7 +17,7 @@ const projects = [
   },
   {
     url: 'https://altizure.com',
-    embed: 'https://site.altizure.com/project/54ed7ff541fbfa3e1967fc78/model/embed#autoplay=false&lights=off',
+    embed: 'https://www.altizure.com/project-model?pid=583d844035666e6901ec9a33&render=texture&campose=false&embed=true#autoplay=false',
     title: 'Altizure',
     descriptions: [
       'Altizure is a cloud platform for automatic 3D reconstruction to turn drone photographs into 3D models. Here I worked as a full-stack developer on every aspect of the web platform, including both front ends and back ends. As a team of two, we built a portal with an in-house cluster to run reconstruction parallelly and a fast viewer to browse, share and do quick tasks on generated 3D models. Within a year and a half, we succeeded in growing our user base from zero to more than 7,000 activated users.'

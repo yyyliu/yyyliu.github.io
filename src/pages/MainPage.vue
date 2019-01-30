@@ -90,7 +90,7 @@
         <div class="mt-5"></div>
         <hr>
         <div class="m-3 text-center text-muted text-xs">
-          Copyright © 2016-2018 Yang Liu
+          Copyright © 2016-2019 Yang Liu
         </div>
         <div class="mt-5"></div>
       </div>
