@@ -53,6 +53,20 @@ const education = [
 
 const papers = [
   {
+    author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
+    title: 'Latent Space Cartography: Visual Analysis of Vector Space Embeddings',
+    venue: 'Computer Graphics Forum (Proc. EuroVis)',
+    time: '2019',
+    status: 'in submission'
+  },
+  {
+    author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
+    title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
+    venue: 'Computer Graphics Forum (Proc. EuroVis)',
+    time: '2019',
+    status: 'in submission'
+  },
+  {
     author: 'Yang Liu, Jeffrey Heer',
     title: 'Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
