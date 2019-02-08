@@ -21,7 +21,7 @@ let router = new Router({
       component: VitaPage
     },
     {
-      path: '/interview',
+      path: '/stats-interview',
       name: 'interview',
       meta: { title: 'Interview Study' },
       component: RecruitPage
