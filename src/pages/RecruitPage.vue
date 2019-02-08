@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-theme">
+  <div class="bg-theme" style="min-height: 100vh;">
     <!--Banner-->
     <div class="banner"></div>
 
@@ -7,7 +7,18 @@
     <div class="content">
       <div class="form">
         <div class="form-border"></div>
-        <div class="form-content">
+
+        <!--After submit-->
+        <div v-if="submit" class="form-content">
+          <h3 class="mb-4">Thank you!</h3>
+          <p>
+            Thanks for signing up.
+            We will contact you soon if you are eligible.
+          </p>
+        </div>
+
+        <!--Before submit-->
+        <div v-else class="form-content">
 
           <h3 class="mb-4">Statistical Analysis Interview</h3>
 
@@ -73,10 +84,16 @@
                               placeholder="Enter a URL to your paper">
                 </b-form-input>
               </b-form-group>
-            </b-form>
 
-            <!--Submit button-->
-            <button type="submit" class="btn btn-theme mt-3">Submit</button>
+              <!--Submit button-->
+              <button type="submit" :disabled="submitting"
+                      class="btn btn-theme mt-3">
+                {{ submitting ? 'Submitting ... ' : 'Submit' }}
+              </button>
+              <span v-if="err" class="ml-3 text-danger">
+                Unable to submit. Please try again later. If error persists, please contact us.
+              </span>
+            </b-form>
 
             <div class="mt-2" v-if="!showConsent">
               <small class="text-muted">
@@ -124,11 +141,25 @@
 </template>
 
 <script>
+  // Initialize Firebase
+  let config = {
+    apiKey: "AIzaSyA963h_9VAJ8m7NoKkQoHwzmeXeqp1P7HU",
+    authDomain: "interview-16cfa.firebaseapp.com",
+    databaseURL: "https://interview-16cfa.firebaseio.com",
+    projectId: "interview-16cfa",
+    storageBucket: "",
+    messagingSenderId: "876837368401"
+  }
+  firebase.initializeApp(config)
+
   export default {
     name: "RecruitPage",
     data () {
       return {
         showConsent: false,
+        submit: false,
+        submitting: false,
+        err: false,
         form: {
           email: '',
           name: '',
@@ -138,7 +169,19 @@
     },
     methods: {
       onSubmit (evt) {
-        evt.preventDefault();
+        this.submitting = true
+        this.err = false
+
+        evt.preventDefault()
+
+        firebase.database().ref('subjects').push().set(this.form)
+          .then(() => {
+            // success
+            this.submit = true
+          }, () => {
+            this.submitting = false
+            this.err = true
+          })
       }
     }
   }
@@ -176,6 +219,7 @@
     color: rgba(0,0,0,.87);
     padding: 34px;
     font-size: 16px;
+    min-height: 100%;
   }
 
   .footer {
