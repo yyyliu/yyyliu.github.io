@@ -25,10 +25,10 @@
           <p>
             Have you conducted experiments and performed hypothesis testing?
             Are you willing to share your data and analysis scripts with us?
-            If so, we would like to invite you to participate in a study about understanding the process of statistical analysis.
+            If so, we would like to invite you to participate in a study about understanding the process of data analysis.
 
             <br><br>
-            In the study, we will ask you open-ended questions about the statistical analysis decisions in one of your previous projects.
+            In the study, we will ask you open-ended questions about the analysis decisions in one of your previous projects.
             If you have concerns about us inspecting your analysis scripts,
             please rest assured that our goal is not to find flaws and we will not publish anything without your consent.
             Instead, we seek to understand analysis processes better.
@@ -39,7 +39,7 @@
             <div class="mb-2"><b class="font-weight-bold">Requirement:</b> a publication involving statistical analysis</div>
             <div class="mb-2"><b class="font-weight-bold">Duration:</b> 60 to 90 minutes</div>
             <div class="mb-2"><b class="font-weight-bold">Method:</b> remote interview</div>
-            <div><b class="font-weight-bold">Reward:</b> USD $20</div>
+            <div><b class="font-weight-bold">Reward:</b> $20 Amazon gift card</div>
           </div>
           <br>
 
@@ -109,7 +109,6 @@
                class="text-muted mt-3" style="font-size: 0.8em;">
             By proceeding, you agree to the following terms.
             You must be over 18 in age to participate.
-            You must be cleared to work in the US to receive payments.
             Your participation is voluntary.
             All of the information will be confidential, only accessible by approved research collaborators.
             We will only use your contact information to contact you if your are eligible for the study.
@@ -127,7 +126,7 @@
     <!--Footer-->
     <div class="footer text-center">
       <div class="text-muted">
-        <small>This study is conducted by researchers at Interactive Data Lab, University of Washington</small>
+        <small>Interactive Data Lab, University of Washington</small>
       </div>
 
       <div class="mt-3">
