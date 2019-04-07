@@ -1,0 +1,9 @@
+@inproceedings{liu2018-colormaps,
+ author = {Liu, Yang and Heer, Jeffrey},
+ title = {Somewhere over the rainbow: An empirical assessment of quantitative colormaps},
+ booktitle = {Proceedings of the Conference on Human Factors in Computing Systems (CHI)},
+ year = {2018},
+ doi = {10.1145/3173574.3174172},
+ pages = {598:1--598:12},
+ publisher = {ACM}
+}
