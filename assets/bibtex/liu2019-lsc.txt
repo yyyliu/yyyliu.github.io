@@ -1,0 +1,6 @@
+@article{liu2019-lsc,
+ title = {Latent space cartography: Visual analysis of vector space embeddings},
+ author = {Yang Liu AND Eunice Jun AND Qisheng Li AND Jeffrey Heer},
+ journal = {Computer Graphics Forum (Proc. EuroVis)},
+ year = {2019}
+}

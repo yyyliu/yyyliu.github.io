@@ -1,9 +1,35 @@
 const projects = [
   {
+    url: '/build/misc/lsc.pdf',
+    image: '/build/images/eurovis19.jpg',
+    legend: 'Interpreting latent spaces from variational autoencoders trained on emoji images. (a) The user starts with summary metrics for ' +
+      'latent space variants, (b) then drills down to an overview distribution of a chosen latent space. (c) To map out a semantic relationship, the ' +
+      'user defines an attribute vector, examines the custom projection to the vector axis, applies analogies and assesses the relationship uncertainty.',
+    title: 'Latent space cartography: Visual analysis of vector space embeddings',
+    descriptions: [
+      'Latent spaces—reduced-dimensionality vector space embeddings of data, fit via machine learning—have been shown to capture ' +
+      'interesting semantic properties and support data analysis and synthesis within a domain. Interpretation of latent spaces is ' +
+      'challenging because prior knowledge, sometimes subtle and implicit, is essential to the process. We contribute methods for ' +
+      '“latent space cartography”, the process of mapping and comparing meaningful semantic dimensions within latent spaces. We ' +
+      'first perform a literature survey of relevant machine learning, natural language processing, and scientific research to distill ' +
+      'common tasks and propose a workflow process. Next, we present an integrated visual analysis system for supporting this ' +
+      'workflow, enabling users to discover, define, and verify meaningful relationships among data points, encoded within latent space ' +
+      'dimensions. Three case studies demonstrate how users of our system can compare latent space variants in image generation, ' +
+      'challenge existing findings on cancer transcriptomes, and assess a word embedding benchmark.',
+      'It appears in Computer Graphics Forum (Proc. EuroVis), 2019.'
+    ],
+    buttons: [
+      {name: 'paper', link: '/build/misc/lsc.pdf', icon: 'fa-file-o'},
+      {name: 'appendix', link: '/build/misc/lsc-supp.pdf', icon: 'fa-file-o'},
+      {name: 'software', link: 'https://github.com/yyyliu/latent-space-cartography', icon: 'fa-code'},
+      {name: 'bibtex', link: '/build/bibtex/liu2019-lsc.txt', icon: 'fa-quote-left'}
+    ],
+  },
+  {
     url: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf',
     image: '/build/images/chi18.png',
     legend: 'Error rate by span and reference for assorted colormaps. Points indicate bootstrapped means, along with 50% (thick) and 95% (thin) CIs. Each sub-plot includes the mean value for each span level (dotted grey line). Viridis exhibits consistently low error across the board. The accuracy of blues matches that of viridis at larger spans, but drops notably for the smallest span. The blueorange diverging scheme exhibits errors when comparison is made across the central blue-orange hue boundary.',
-    title: 'Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps',
+    title: 'Somewhere over the rainbow: An empirical assessment of quantitative colormaps',
     descriptions: [
       'Quantitative color encodings are common in visualizations, but not all of them effectively represent data. In this paper, we contribute a comparative analysis of 9 colormaps. In our experiments, people judged relative distance among color triplets. We found that judiciously designed multi-hue colormaps perform well in time and error. Single-hue colormaps also perform well despite resolution issues. We also identified recurring issues, such as poor performance for low luminance regions on a white background.',
       'It appears in ACM Human Factors in Computing Systems (CHI), 2018.'
@@ -11,7 +37,7 @@ const projects = [
     buttons: [
       {name: 'paper', link: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf', icon: 'fa-file-o'},
       {name: 'data', link: 'https://github.com/uwdata/quantitative-color-data', icon: 'fa-table'},
-      {name: 'bibtex', link: 'http://idl.cs.washington.edu/bibtex/quantitative-color', icon: 'fa-quote-left'},
+      {name: 'bibtex', link: '/build/bibtex/liu2018-colormaps.txt', icon: 'fa-quote-left'},
       {name: 'slides', link: '/build/misc/chi18-colormaps.pdf', icon: 'fa-image'}
     ]
   },
@@ -33,13 +59,14 @@ const projects = [
   {
     url: '/build/misc/pvis14.pdf',
     image: '/build/images/pvis2014.jpg',
-    title: 'Embedding Temporal Display into Map',
+    title: 'Embedding temporal display into map',
     descriptions: [
       'This paper tried to visualize spatio-temporal data in-place while minimizing occlusion or distortion. Inspired by an algorithm in Computer Graphics, we thought about seamlessly enlarging the roads on a raster map, so we could place time series plots directly on roads where the events occurred. In this work, I drafted the whole paper, proposed the visual principles and designs, came up with the case study stories, and carefully designed the user studies.',
       'It appears in IEEE Pacific Visualization Symposium (PacificVis), 2014.'
     ],
     buttons: [
-      {name: 'paper', link: '/build/misc/pvis14.pdf', icon: 'fa-file-o'}
+      {name: 'paper', link: '/build/misc/pvis14.pdf', icon: 'fa-file-o'},
+      {name: 'bibtex', link: '/build/bibtex/sun2014-embedding.txt', icon: 'fa-quote-left'}
     ]
   },
   {
