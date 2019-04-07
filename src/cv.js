@@ -51,20 +51,28 @@ const education = [
   }
 ]
 
-const papers = [
-  {
+/**
+ * Example:
+ * {
     author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
     title: 'Latent Space Cartography: Visual Analysis of Vector Space Embeddings',
     venue: 'Computer Graphics Forum (Proc. EuroVis)',
     time: '2019',
     status: 'in submission'
+  }
+ */
+const papers = [
+  {
+    author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
+    title: 'Latent Space Cartography: Visual Analysis of Vector Space Embeddings',
+    venue: 'Computer Graphics Forum (Proc. EuroVis)',
+    time: '2019'
   },
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
     title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
-    venue: 'Computer Graphics Forum (Proc. EuroVis)',
-    time: '2019',
-    status: 'in submission'
+    venue: 'arXiv',
+    time: '2019'
   },
   {
     author: 'Yang Liu, Jeffrey Heer',
