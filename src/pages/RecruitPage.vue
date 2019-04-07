@@ -5,7 +5,15 @@
 
     <!--Content-->
     <div class="content">
-      <div class="form">
+      <div v-if="expired" class="form">
+        <div class="form-content">
+          <h3 class="mb-4">Thank you ...</h3>
+          <div class="mb-3">
+            Thanks for your interest! But we're no longer recruiting participants.
+          </div>
+        </div>
+      </div>
+      <div v-else class="form">
         <div class="form-border"></div>
 
         <!--After submit-->
@@ -155,6 +163,7 @@
     name: "RecruitPage",
     data () {
       return {
+        expired: true,
         showConsent: false,
         submit: false,
         submitting: false,
