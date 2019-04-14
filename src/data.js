@@ -22,6 +22,7 @@ const projects = [
       {name: 'paper', link: '/build/misc/lsc.pdf', icon: 'fa-file-o'},
       {name: 'appendix', link: '/build/misc/lsc-supp.pdf', icon: 'fa-file-o'},
       {name: 'software', link: 'https://github.com/yyyliu/latent-space-cartography', icon: 'fa-code'},
+      {name: 'video', link: 'https://youtu.be/war0DRbRGNE', icon: 'fa-youtube-play'},
       {name: 'bibtex', link: '/build/bibtex/liu2019-lsc.txt', icon: 'fa-quote-left'}
     ],
   },
