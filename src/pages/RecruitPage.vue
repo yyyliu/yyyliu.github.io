@@ -148,16 +148,6 @@
 </template>
 
 <script>
-  // Initialize Firebase
-  let config = {
-    apiKey: "AIzaSyA963h_9VAJ8m7NoKkQoHwzmeXeqp1P7HU",
-    authDomain: "interview-16cfa.firebaseapp.com",
-    databaseURL: "https://interview-16cfa.firebaseio.com",
-    projectId: "interview-16cfa",
-    storageBucket: "",
-    messagingSenderId: "876837368401"
-  }
-  firebase.initializeApp(config)
 
   export default {
     name: "RecruitPage",
@@ -181,15 +171,6 @@
         this.err = false
 
         evt.preventDefault()
-
-        firebase.database().ref('subjects').push().set(this.form)
-          .then(() => {
-            // success
-            this.submit = true
-          }, () => {
-            this.submitting = false
-            this.err = true
-          })
       }
     }
   }
