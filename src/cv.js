@@ -12,15 +12,15 @@ const education = [
     location: 'Seattle, WA',
     advisor: 'Jeffrey Heer'
   },
-  {
-    name: 'Carnegie Mellon University',
+  /* {
+     name: 'Carnegie Mellon University',
     degree: 'M.S. Electrical and Computer Engineering',
     start: '2017 Jan',
     end: '2017 May',
     location: 'Pittsburgh, PA',
     gpa: '4.0/4.0',
     desc: 'Completed 12 credits'
-  },
+  }, */
   {
     name: 'Hong Kong University of Science and Technology',
     degree: 'M.Phil. Computer Science',
@@ -28,7 +28,7 @@ const education = [
     end: '2014 Aug 31',
     location: 'Hong Kong',
     gpa: '3.98/4.3',
-    thesis: 'Large-scale visualization of 3D urban reconstruction',
+    thesis: 'large-scale visualization of 3D urban reconstruction',
     advisor: 'Long Quan and Huamin Qu'
   },
   {
@@ -137,12 +137,14 @@ const service = [
   {
     name: 'Graduate Admission Committee',
     time: '2019',
-    desc: 'Served on the committee to review graduate applications to the Allen School of Computer Science at the University of Washington.'
+    location: 'University of Washington',
+    desc: 'Reviewed 27 applications to the Ph.D. program of the Allen School of Computer Science.'
   },
   {
     name: 'Co-Organizer: Interactive Systems Seminar',
     time: '2018 - Present',
-    desc: 'Co-organized a weekly seminar for reading and discussing HCI papers, at the University of Washington.'
+    location: 'University of Washington',
+    desc: 'Co-organized a weekly seminar for reading and discussing HCI papers.'
   }
 ]
 

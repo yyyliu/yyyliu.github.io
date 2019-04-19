@@ -25,7 +25,7 @@
               <span class="cv-role">{{edu.degree}}</span>
               <span v-if="edu.advisor">, Advisor: {{edu.advisor}}</span>
               <span v-if="edu.desc">, {{edu.desc}}</span>
-              <span v-if="edu.gpa">, GPA: {{edu.gpa}}</span>
+              <div v-if="edu.thesis">Thesis: {{edu.thesis}}</div>
             </div>
             <div class="cv-time">{{getTime(edu)}}</div>
           </div>
@@ -66,7 +66,9 @@
         <div v-for="s in service" class="mb-2 d-flex">
           <div class="cv-alt-time">{{s.time}}</div>
           <div class="w-100">
-            <div><b>{{s.name}}</b></div>
+            <div>
+              <b>{{s.name}}</b>, {{s.location}}
+            </div>
             <div>{{s.desc}}</div>
           </div>
         </div>
