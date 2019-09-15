@@ -86,16 +86,18 @@ const projects = [
 
 const bio = [
   [
-    {text: 'I\'m a Computer Science PhD student at the'},
+    {text: 'Hello! I\'m a 3rd year PhD student.'},
+    {text: 'I research information visualization, with the general goal of promoting robust data analysis.'},
+    {text: 'My current focus is to study how analyses might go awry and build new tools to improve reproducibility.'},
+  ],
+  [
+    {text: ' I\'m at the'},
     {text: ' Interactive Data Lab', url: 'https://idl.cs.washington.edu/'},
     {text: ' at the'},
     {text: ' University of Washington', url: 'https://www.cs.washington.edu/'},
-    {text: '. I work in the area of Information Visualization and HCI, advised by Prof.'},
+    {text: ', working with Prof.'},
     {text: ' Jeffery Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
-    {text: '. Specific topics include graphical perception, exploratory data analysis and visualizing machine learning models.'}
-  ],
-  [
-    {text: 'In the past, I have been affiliated with the'},
+    {text: '. In the past, I have been affiliated with the'},
     {text: ' Hong Kong University of Science and Technology', url: 'http://www.ust.hk/'},
     {text: ','},
     {text: ' Carnegie Mellon University', url: 'https://www.ece.cmu.edu/'},

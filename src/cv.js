@@ -63,15 +63,23 @@ const education = [
  */
 const papers = [
   {
-    author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
-    title: 'Latent Space Cartography: Visual Analysis of Vector Space Embeddings',
-    venue: 'Computer Graphics Forum (Proc. EuroVis)',
-    time: '2019'
+    author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
+    title: 'Paths Explored, Paths Omitted, Paths Obscured: Decision Points & Selective Reporting in End-to-End Data Analysis',
+    venue: 'ACM Human Factors in Computing Systems (CHI)',
+    time: '2020',
+    status: 'in submission'
   },
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
     title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
-    venue: 'arXiv',
+    venue: 'VDS at IEEE VIS',
+    time: '2019',
+    status: 'in submission'
+  },
+  {
+    author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
+    title: 'Latent Space Cartography: Visual Analysis of Vector Space Embeddings',
+    venue: 'Computer Graphics Forum (Proc. EuroVis)',
     time: '2019'
   },
   {
