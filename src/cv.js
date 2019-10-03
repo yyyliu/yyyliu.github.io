@@ -143,6 +143,11 @@ const work = [
  */
 const service = [
   {
+    name: 'Reviewer',
+    time: '2019',
+    location: 'ACM SIGCHI 2020'
+  },
+  {
     name: 'Graduate Admission Committee',
     time: '2019',
     location: 'University of Washington',

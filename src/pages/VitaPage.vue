@@ -67,9 +67,9 @@
           <div class="cv-alt-time">{{s.time}}</div>
           <div class="w-100">
             <div>
-              <b>{{s.name}}</b>, {{s.location}}
+              <b>{{s.name}}</b><span v-if="s.location">, {{s.location}}</span>
             </div>
-            <div>{{s.desc}}</div>
+            <div v-if="s.desc">{{s.desc}}</div>
           </div>
         </div>
       </div>
