@@ -72,9 +72,8 @@ const papers = [
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
     title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
-    venue: 'VDS at IEEE VIS',
-    time: '2019',
-    status: 'in submission'
+    venue: 'arXiv',
+    time: '2019'
   },
   {
     author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
