@@ -32,6 +32,9 @@
                    :href="part.url">{{part.text}}</a>
               </span>
             </p>
+            <p class="text-justify text-bold" style="background: lightyellow">
+              I'm recruiting undergrad research assistants; email me if you're interested!
+            </p>
 
             <!--Contact-->
             <div class="text-bold mt-3">CONTACT ME</div>
