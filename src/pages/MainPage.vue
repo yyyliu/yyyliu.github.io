@@ -61,8 +61,7 @@
         </div>
 
         <!--Project-->
-        <div class="mt-5"></div>
-        <h3 class="mb-3">PROJECTS</h3>
+        <h3 class="mt-3 mb-3">PROJECTS</h3>
         <div class="yyy-card" v-for="p in projects">
           <a :href="p.url" target="_blank" v-if="p.image">
             <img :src="p.image" :alt="p.title" class="image-responsive"/>

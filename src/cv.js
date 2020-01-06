@@ -67,7 +67,7 @@ const papers = [
     title: 'Paths Explored, Paths Omitted, Paths Obscured: Decision Points & Selective Reporting in End-to-End Data Analysis',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     time: '2020',
-    status: 'in submission'
+    status: 'conditionally accepted'
   },
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',

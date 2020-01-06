@@ -1,5 +1,31 @@
 const projects = [
   {
+    url: 'https://arxiv.org/abs/1910.13602',
+    image: '/build/images/chi20.png',
+    legend: 'Analytic Decision Graph for an interview participant, representing a controlled experiment to' +
+      ' investigate the impact of web design on reading performance. At several steps, the participant revised her analytic'+
+      ' decisions based on end results and reviewer feedback, for instance merging'+
+      ' two levels of an IV because effect sizes were similar. While she examined'+
+      ' model specification options thoroughly, she appeared to'+
+      ' place less emphasis on inference decisions such as choosing which significance test to use.',
+    title: 'Paths explored, paths omitted, paths obscured: Decision points & selective reporting in end-to-end data analysis',
+    descriptions: [
+      'Drawing reliable inferences from data involves many, sometimes arbitrary, decisions across phases of data collection, wrangling, and modeling.'+
+      'As different choices can lead to diverging conclusions, understanding how researchers make analytic decisions is important for supporting robust and replicable analysis.'+
+      'In this study, we pore over nine published research studies and conduct semi-structured interviews with their authors.'+
+      'We observe that researchers often base their decisions on methodological or theoretical concerns, but subject to constraints arising from the data, expertise, or perceived interpretability.'+
+      'We confirm that researchers may experiment with choices in search of desirable results, but also identify other reasons why researchers explore alternatives yet omit findings.'+
+      'In concert with our interviews, we also contribute visualizations for communicating decision processes throughout an analysis.'+
+      'Based on our results, we identify design opportunities for strengthening end-to-end analysis, for instance via tracking and meta-analysis of multiple decision paths.',
+      'ACM Human Factors in Computing Systems (CHI), 2020.'
+    ],
+    buttons: [
+      {name: 'paper', link: 'https://arxiv.org/abs/1910.13602', icon: 'fa-file-o'},
+      {name: 'appendix', link: 'https://osf.io/m5cph/', icon: 'fa-file-o'},
+      {name: 'bibtex', link: '/build/bibtex/liu2020-interview.txt', icon: 'fa-quote-left'}
+    ]
+  },
+  {
     url: '/build/misc/lsc.pdf',
     image: '/build/images/eurovis19.jpg',
     legend: 'Interpreting latent spaces from variational autoencoders trained on emoji images. (a) The user starts with summary metrics for ' +
@@ -16,7 +42,7 @@ const projects = [
       'workflow, enabling users to discover, define, and verify meaningful relationships among data points, encoded within latent space ' +
       'dimensions. Three case studies demonstrate how users of our system can compare latent space variants in image generation, ' +
       'challenge existing findings on cancer transcriptomes, and assess a word embedding benchmark.',
-      'It appears in Computer Graphics Forum (Proc. EuroVis), 2019.'
+      'Computer Graphics Forum (Proc. EuroVis), 2019.'
     ],
     buttons: [
       {name: 'paper', link: '/build/misc/lsc.pdf', icon: 'fa-file-o'},
@@ -33,7 +59,7 @@ const projects = [
     title: 'Somewhere over the rainbow: An empirical assessment of quantitative colormaps',
     descriptions: [
       'Quantitative color encodings are common in visualizations, but not all of them effectively represent data. In this paper, we contribute a comparative analysis of 9 colormaps. In our experiments, people judged relative distance among color triplets. We found that judiciously designed multi-hue colormaps perform well in time and error. Single-hue colormaps also perform well despite resolution issues. We also identified recurring issues, such as poor performance for low luminance regions on a white background.',
-      'It appears in ACM Human Factors in Computing Systems (CHI), 2018.'
+      'ACM Human Factors in Computing Systems (CHI), 2018.'
     ],
     buttons: [
       {name: 'paper', link: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf', icon: 'fa-file-o'},
@@ -53,7 +79,6 @@ const projects = [
       {name: 'website', link: 'https://altizure.com', icon: 'fa-external-link'},
       {name: 'video', link: 'https://www.youtube.com/watch?v=-SCEJykKex4', icon: 'fa-youtube-play'},
       {name: 'thesis', link: '/build/misc/thesis.pdf', icon: 'fa-file-o'},
-      {name: 'intro', link: 'https://hkust25projects.ust.hk/en/projects/detail/mapping_the_world_with_drones', icon: 'fa-external-link'},
       {name: 'channel', link: 'https://www.youtube.com/channel/UCJ1TQcdZt3i7fgWFyczrcFw', icon: 'fa-youtube'}
     ]
   },

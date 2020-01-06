@@ -1,0 +1,7 @@
+@inproceedings{liu2020-paths,
+ author = {Liu, Yang and Althoff, Tim and Heer, Jeffrey},
+ title = {Paths explored, paths omitted, paths obscured: Decision points & selective reporting in end-to-end data analysis},
+ booktitle = {Proceedings of the Conference on Human Factors in Computing Systems (CHI)},
+ year = {2020},
+ doi = {10.1145/3313831.3376533}
+}
