@@ -1,0 +1,7 @@
+@article{wongsuphasawat2019,
+    title={Goals, process, and challenges of exploratory data analysis: An interview study},
+    author={Kanit Wongsuphasawat and Yang Liu and Jeffrey Heer},
+    year={2019},
+    journal={arXiv preprint arXiv:1911.00568},
+    url={https://arxiv.org/abs/1911.00568}
+}

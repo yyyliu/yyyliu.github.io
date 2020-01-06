@@ -5,3 +5,4 @@ assets/
 package.json
 webpack.config.js
 \.idea/
+figures.key

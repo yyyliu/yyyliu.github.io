@@ -2,5 +2,7 @@
  title = {Embedding temporal display into maps for occlusion-free visualization of spatio-temporal data},
  author = {Guodao Sun AND Yang Liu AND Wenbin Wu AND Ronghua Liang AND Huamin Qu},
  journal = {Pacific Visualization Symposium (PacificVis)},
- year = {2014}
+ year = {2014},
+ pages={185-192},
+ doi = {10.1109/PacificVis.2014.56}
 }

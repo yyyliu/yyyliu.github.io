@@ -2,5 +2,9 @@
  title = {Latent space cartography: Visual analysis of vector space embeddings},
  author = {Yang Liu AND Eunice Jun AND Qisheng Li AND Jeffrey Heer},
  journal = {Computer Graphics Forum (Proc. EuroVis)},
- year = {2019}
+ volume = {38},
+ number = {3},
+ pages = {67-78},
+ year = {2019},
+ doi = {10.1111/cgf.13672}
 }
