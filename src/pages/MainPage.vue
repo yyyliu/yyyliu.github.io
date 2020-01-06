@@ -77,11 +77,13 @@
             {{d}}
           </p>
           <div class="mt-3">
-            <a v-for="b in p.buttons"
-               class="btn btn-default btn-labeled btn-sm fa mr-3"
-               :class="b.icon"
+            <b-button v-for="b in p.buttons"
+               class="mr-2"
+               variant="outline-secondary"
+               size="sm"
                :href="b.link"
-               target="_blank">{{b.name}}</a>
+               v-bind:key="b.name"
+               target="_blank">{{b.name}}</b-button>
             <small v-if="p.ps" class="text-muted text-xs">
               {{p.ps}}
             </small>
@@ -175,47 +177,6 @@
   {
     background-color: #19b698;
     color: #fff;
-  }
-
-  .btn
-  {
-    border-radius: 2px;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    transition: all .15s;
-  }
-
-  .btn-default
-  {
-    background-color: #fff;
-    border-color: #c3cedb;
-    color: #404040;
-  }
-
-  .btn-default:hover
-  {
-    background-color: #e6e6e6;
-    color: #1a1a1a;
-    border-color: #c8d2de;
-  }
-
-  .btn-labeled
-  {
-    font-family: inherit;
-    font-size: 12px;
-    padding: 1px 5px;
-    overflow: hidden;
-  }
-
-  .btn-labeled::before
-  {
-    margin-left: -5px;
-    margin-right: 1px;
-    padding: 1px 5px;
-    background-color: rgba(0, 0, 0, .05);
-    color: inherit;
-    font-family: fontAwesome;
-    display: inline-block;
   }
 
   .text-muted

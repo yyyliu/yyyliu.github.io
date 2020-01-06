@@ -17,9 +17,3 @@
     }
   }
 </script>
-
-<style>
-  @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-  @import '../assets/css/bernadette.css';
-  @import '../assets/css/latolatinfonts.css';
-</style>
