@@ -7,7 +7,7 @@ const education = [
   {
     name: 'University of Washington',
     degree: 'Ph.D. Computer Science',
-    start: '2017 July 10',
+    start: 'Jul. 2017',
     end: '',
     location: 'Seattle, WA',
     advisor: 'Jeffrey Heer'
@@ -24,8 +24,8 @@ const education = [
   {
     name: 'Hong Kong University of Science and Technology',
     degree: 'M.Phil. Computer Science',
-    start: '2012 Sep 1',
-    end: '2014 Aug 31',
+    start: 'Sep. 2012',
+    end: 'Aug. 2014',
     location: 'Hong Kong',
     gpa: '3.98/4.3',
     thesis: 'large-scale visualization of 3D urban reconstruction',
@@ -34,9 +34,9 @@ const education = [
   {
     name: 'Hong Kong University of Science and Technology',
     degree: 'B.S. Biochemistry',
-    start: '2008 Sep 1',
+    start: 'Sep. 2008',
     location: 'Hong Kong',
-    end: '2012 Jun',
+    end: 'Jun. 2012',
     gpa: '3.95/4.3',
     desc: 'First Class Honor'
   },
@@ -44,8 +44,8 @@ const education = [
     hide: 'true',
     name: 'University of California, Berkeley',
     degree: 'Study Abroad',
-    start: '2011 Jan',
-    end: '2011 May',
+    start: 'Jan. 2011',
+    end: 'May. 2011',
     location: 'Berkeley, CA',
     gpa: '4.0/4.0'
   }
@@ -108,8 +108,8 @@ const papers = [
 const work = [
   {
     title: 'Everest Innovation Technology, Altizure.com',
-    start: '2015 Apr 20',
-    end: '2016 Dec 1',
+    start: 'Apr. 2015',
+    end: 'Dec. 2016',
     location: 'Hong Kong',
     role: 'Full Stack Developer',
     desc: [
@@ -121,8 +121,8 @@ const work = [
   },
   {
     title: 'Microsoft Corporation, Office Big Data',
-    start: '2014 Sep 15',
-    end: '2015 Apr 10',
+    start: 'Sep. 2014',
+    end: 'Apr. 2015',
     location: 'Beijing, China',
     role: 'Software Development Engineer (SDE)',
     desc: [

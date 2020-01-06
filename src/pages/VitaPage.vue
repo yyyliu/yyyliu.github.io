@@ -102,8 +102,6 @@
 <script>
   import {meta, education, papers, work, awards, teaching, service} from '../cv'
   import SectionHeader from '../components/SectionHeader.vue'
-  import moment from 'moment'
-  import _ from 'lodash'
 
   export default {
     name: 'VitaPage',
@@ -123,15 +121,12 @@
     },
     methods: {
       getTime (obj) {
-        let fmt = 'MMM. YYYY'
-        let start = moment(new Date(obj.start)).format(fmt)
-        let end = obj.end ? moment(new Date(obj.end)).format(fmt) : 'Present'
-
-        return `${start} - ${end}`
+        let end = obj.end || 'Present'
+        return `${obj.start} - ${end}`
       },
       getPaper (p) {
         let author = p.author.split(',')
-        author = _.map(author, (at) => {
+        author = author.map((at) => {
           if (/Yang Liu/.test(at)) {
             return `<b>${at}</b>`
           }
@@ -145,7 +140,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .cv {
     background-color: #fff;
     width: 842px;
