@@ -2,18 +2,13 @@ const publications = [
   {
     url: 'https://arxiv.org/abs/1910.13602',
     image: '/build/images/chi20.png',
+    thumbnail: '/build/images/chi20-thumb.png',
     legend: 'Analytic Decision Graph for an interview participant, representing a controlled experiment to investigate the impact of web design on reading performance. At several steps, the participant revised her analytic decisions based on end results and reviewer feedback, for instance merging two levels of an IV because effect sizes were similar. While she examined model specification options thoroughly, she appeared to place less emphasis on inference decisions such as choosing which significance test to use.',
     title: 'Paths explored, paths omitted, paths obscured: Decision points & selective reporting in end-to-end data analysis',
     authors: ['Yang Liu', 'Tim Althoff', 'Jeffrey Heer'],
     venue: 'ACM Human Factors in Computing Systems (CHI), 2020',
     descriptions: [
-      'Drawing reliable inferences from data involves many, sometimes arbitrary, decisions across phases of data collection, wrangling, and modeling.'+
-      'As different choices can lead to diverging conclusions, understanding how researchers make analytic decisions is important for supporting robust and replicable analysis.'+
-      'In this study, we pore over nine published research studies and conduct semi-structured interviews with their authors.'+
-      'We observe that researchers often base their decisions on methodological or theoretical concerns, but subject to constraints arising from the data, expertise, or perceived interpretability.'+
-      'We confirm that researchers may experiment with choices in search of desirable results, but also identify other reasons why researchers explore alternatives yet omit findings.'+
-      'In concert with our interviews, we also contribute visualizations for communicating decision processes throughout an analysis.'+
-      'Based on our results, we identify design opportunities for strengthening end-to-end analysis, for instance via tracking and meta-analysis of multiple decision paths.'
+      'Drawing reliable inferences from data involves many, sometimes arbitrary, decisions across phases of data collection, wrangling, and modeling. As different choices can lead to diverging conclusions, understanding how researchers make analytic decisions is important for supporting robust and replicable analysis. In this study, we pore over nine published research studies and conduct semi-structured interviews with their authors. We observe that researchers often base their decisions on methodological or theoretical concerns, but subject to constraints arising from the data, expertise, or perceived interpretability. We confirm that researchers may experiment with choices in search of desirable results, but also identify other reasons why researchers explore alternatives yet omit findings. In concert with our interviews, we also contribute visualizations for communicating decision processes throughout an analysis. Based on our results, we identify design opportunities for strengthening end-to-end analysis, for instance via tracking and meta-analysis of multiple decision paths.',
     ],
     buttons: [
       {name: 'paper', link: 'https://arxiv.org/abs/1910.13602', icon: 'fa-file-o'},
@@ -24,9 +19,8 @@ const publications = [
   {
     url: '/build/misc/lsc.pdf',
     image: '/build/images/eurovis19.jpg',
-    legend: 'Interpreting latent spaces from variational autoencoders trained on emoji images. (a) The user starts with summary metrics for ' +
-      'latent space variants, (b) then drills down to an overview distribution of a chosen latent space. (c) To map out a semantic relationship, the ' +
-      'user defines an attribute vector, examines the custom projection to the vector axis, applies analogies and assesses the relationship uncertainty.',
+    thumbnail: '/build/images/eurovis19-thumb.png',
+    legend: 'Interpreting latent spaces from variational autoencoders trained on emoji images. (a) The user starts with summary metrics for latent space variants, (b) then drills down to an overview distribution of a chosen latent space. (c) To map out a semantic relationship, the user defines an attribute vector, examines the custom projection to the vector axis, applies analogies and assesses the relationship uncertainty.',
     title: 'Latent space cartography: Visual analysis of vector space embeddings',
     authors: ['Yang Liu', 'Eunice Jun', 'Qisheng Li', 'Jeffrey Heer'],
     venue: 'Computer Graphics Forum (Proc. EuroVis), 2019',
@@ -50,8 +44,25 @@ const publications = [
     ],
   },
   {
+    url: 'https://arxiv.org/abs/1911.00568',
+    image: '/build/images/arxiv19.png',
+    thumbnail: '/build/images/arxiv19-thumb.png',
+    legend: ' A matrix of interviewees, their corresponding analysis context, and high-level tasks they perform in the analysis process.',
+    title: 'Goals, process, and challenges of exploratory data analysis: An interview study',
+    authors: ['Kanit Wongsuphasawat', 'Yang Liu', 'Jeffrey Heer'],
+    venue: 'arXiv, 2019',
+    descriptions: [
+      'How do analysis goals and context affect exploratory data analysis (EDA)? To investigate this question, we conducted semi-structured interviews with 18 data analysts. We characterize common exploration goals: profiling (assessing data quality) and discovery (gaining new insights). Though the EDA literature primarily emphasizes discovery, we observe that discovery only reliably occurs in the context of open-ended analyses, whereas all participants engage in profiling across all of their analyses. We describe the process and challenges of EDA highlighted by our interviews. We find that analysts must perform repetitive tasks (e.g., examine numerous variables), yet they may have limited time or lack domain knowledge to explore data. Analysts also often have to consult other stakeholders and oscillate between exploration and other tasks, such as acquiring and wrangling additional data. Based on these observations, we identify design opportunities for exploratory analysis tools, such as augmenting exploration with automation and guidance.'
+    ],
+    buttons: [
+      {name: 'paper', link: 'https://arxiv.org/abs/1911.00568', icon: 'fa-file-o'},
+      {name: 'bibtex', link: '/build/bibtex/wongsuphasawat2019.txt', icon: 'fa-quote-left'}
+    ]
+  },
+  {
     url: 'http://idl.cs.washington.edu/files/2018-QuantitativeColor-CHI.pdf',
     image: '/build/images/chi18.png',
+    thumbnail: '/build/images/chi18-thumb.png',
     legend: 'Error rate by span and reference for assorted colormaps. Points indicate bootstrapped means, along with 50% (thick) and 95% (thin) CIs. Each sub-plot includes the mean value for each span level (dotted grey line). Viridis exhibits consistently low error across the board. The accuracy of blues matches that of viridis at larger spans, but drops notably for the smallest span. The blueorange diverging scheme exhibits errors when comparison is made across the central blue-orange hue boundary.',
     title: 'Somewhere over the rainbow: An empirical assessment of quantitative colormaps',
     authors: ['Yang Liu', 'Jeffrey Heer'],
@@ -68,12 +79,14 @@ const publications = [
   },
   {
     url: '/build/misc/pvis14.pdf',
-    image: '/build/images/pvis2014.jpg',
-    title: 'Embedding temporal display into map',
+    image: '/build/images/pvis14.jpg',
+    thumbnail: '/build/images/pvis14-thumb.jpg',
+    legend: 'Different temporal representations embedded in broadened roads. (a) Temporal visualizations including Time series curves, ThemeRiver, and spiral graph. (b) and (c) demonstrate the comparison of heatmaps on normal and broadened roads. (d) and (e) show the comparison of the direct overlaying method and our embedded view.',
+    title: 'Embedding temporal display into maps for occlusion-free visualization of spatio-temporal data',
     authors: ['Guodao Sun', 'Yang Liu', 'Wenbin Wu', 'Ronghua Liang', 'Huamin Qu'],
     venue: 'IEEE Pacific Visualization Symposium (PacificVis), 2014',
     descriptions: [
-      'This paper tried to visualize spatio-temporal data in-place while minimizing occlusion or distortion. Inspired by an algorithm in Computer Graphics, we thought about seamlessly enlarging the roads on a raster map, so we could place time series plots directly on roads where the events occurred. In this work, I drafted the whole paper, proposed the visual principles and designs, came up with the case study stories, and carefully designed the user studies.'
+      'It is often necessary to analyze spatio-temporal data such as traffic flow, air pollution, and vehicle trajectories in a city. A map is often used to show the spatial context while various temporal displays like time series plots can be used to present the changes in the data over time. In this paper, we present a novel visualization that can seamlessly embed temporal displays into a map for occlusion-free visualization of both the spatial and temporal attributes of the data. We first extend the seam carving algorithm to broaden the roads of interest in a map with the least distortion to other areas, and then embed temporal displays into the roads to reveal temporal patterns without the occlusion of map information. We study various design choices in our method, including the encoding of the time direction and temporal display, and conduct two comprehensive user studies to validate our design decisions. We also demonstrate the usability of our approach with case studies on real traffic flow data in a major city.'
     ],
     buttons: [
       {name: 'paper', link: '/build/misc/pvis14.pdf', icon: 'fa-file-o'},

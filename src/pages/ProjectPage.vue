@@ -9,10 +9,11 @@
       <iframe :src="project.embed" style="border:none;width:100%;"></iframe>
     </div>
     <h3 class="mt-4 mb-3">{{project.title}}</h3>
-    <div class="mt-3"></div>
+    <div class="mt-3 mb-3 text-bold">{{project.authors.join(', ')}}</div>
     <p v-for="d in project.descriptions" class="text-justify">
       {{d}}
     </p>
+    <div class="text-muted font-italic mt-2">{{project.venue}}</div>
     <div class="mt-3">
       <b-button v-for="b in project.buttons"
                 class="mr-2" size="sm" squared

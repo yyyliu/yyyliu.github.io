@@ -32,30 +32,21 @@
                    :href="part.url">{{part.text}}</a>
               </span>
             </p>
-            <p class="text-justify text-bold" style="background: lightyellow">
-              I'm recruiting undergrad research assistants; email me if you're interested!
-            </p>
 
             <!--Contact-->
-            <div class="text-bold mt-3">CONTACT ME</div>
             <p class="mt-1">
-              <span class="mr-1">
-                <a href="mailto:yliu0@cs.washington.edu" class="text-dark">
-                  Email
-                </a>
-              </span>
-              |
-              <span class="ml-1 mr-1">
-                <a href="/#/cv" class="text-dark" target="_blank">
-                  CV
-                </a>
-              </span>
-              |
-              <span class="ml-1">
-                <a href="https://github.com/yyyliu" class="text-dark" target="_blank">
-                  GitHub
-                </a>
-              </span>
+              <b-button squared size="sm" variant="outline-secondary"
+                        href="mailto:yliu0@cs.washington.ed">
+                <i class="far fa-envelope mr-1"></i>
+                Email</b-button>
+              <b-button class="ml-2" squared size="sm" variant="outline-info"
+                        href="/#/cv" target="_blank">
+                <i class="far fa-file-pdf mr-1"></i>
+                Curriculum Vitae</b-button>
+              <b-button class="ml-2" squared size="sm" variant="outline-secondary"
+                        href="https://github.com/yyyliu" target="_blank">
+                <i class="fab fa-github mr-1"></i>
+                GitHub</b-button>
             </p>
           </div>
         </div>
@@ -65,7 +56,7 @@
         <div class="yyy-card row ml-0 mr-0" v-for="(p, index) in publications">
           <div class="col-4">
             <router-link :to="`/project/${index}`">
-              <img :src="p.image" :alt="p.title" class="image-responsive"/>
+              <img :src="p.thumbnail" :alt="p.title" class="image-responsive"/>
             </router-link>
           </div>
           <div class="col-8">
