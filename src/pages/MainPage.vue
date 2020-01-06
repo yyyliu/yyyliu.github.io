@@ -16,7 +16,7 @@
         <div>
           <!--Image-->
           <div class="media-left pr-3">
-            <img src="/build/images/me.png"
+            <img src="/build/images/me.jpg"
                  alt="This is me"
                  style="height: 200px"
                  class="image-circle"/>

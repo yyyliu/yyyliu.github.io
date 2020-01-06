@@ -2,7 +2,7 @@ const publications = [
   {
     url: 'https://arxiv.org/abs/1910.13602',
     image: '/build/images/chi20.png',
-    thumbnail: '/build/images/chi20-thumb.png',
+    thumbnail: '/build/images/chi20-thumb.jpg',
     legend: 'Analytic Decision Graph for an interview participant, representing a controlled experiment to investigate the impact of web design on reading performance. At several steps, the participant revised her analytic decisions based on end results and reviewer feedback, for instance merging two levels of an IV because effect sizes were similar. While she examined model specification options thoroughly, she appeared to place less emphasis on inference decisions such as choosing which significance test to use.',
     title: 'Paths explored, paths omitted, paths obscured: Decision points & selective reporting in end-to-end data analysis',
     authors: ['Yang Liu', 'Tim Althoff', 'Jeffrey Heer'],
@@ -19,7 +19,7 @@ const publications = [
   {
     url: '/build/misc/lsc.pdf',
     image: '/build/images/eurovis19.jpg',
-    thumbnail: '/build/images/eurovis19-thumb.png',
+    thumbnail: '/build/images/eurovis19-thumb.jpg',
     legend: 'Interpreting latent spaces from variational autoencoders trained on emoji images. (a) The user starts with summary metrics for latent space variants, (b) then drills down to an overview distribution of a chosen latent space. (c) To map out a semantic relationship, the user defines an attribute vector, examines the custom projection to the vector axis, applies analogies and assesses the relationship uncertainty.',
     title: 'Latent space cartography: Visual analysis of vector space embeddings',
     authors: ['Yang Liu', 'Eunice Jun', 'Qisheng Li', 'Jeffrey Heer'],
@@ -46,7 +46,7 @@ const publications = [
   {
     url: 'https://arxiv.org/abs/1911.00568',
     image: '/build/images/arxiv19.png',
-    thumbnail: '/build/images/arxiv19-thumb.png',
+    thumbnail: '/build/images/arxiv19-thumb.jpg',
     legend: ' A matrix of interviewees, their corresponding analysis context, and high-level tasks they perform in the analysis process.',
     title: 'Goals, process, and challenges of exploratory data analysis: An interview study',
     authors: ['Kanit Wongsuphasawat', 'Yang Liu', 'Jeffrey Heer'],
