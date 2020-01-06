@@ -61,32 +61,24 @@
         </div>
 
         <!--Project-->
-        <h3 class="mt-3 mb-3">PROJECTS</h3>
-        <div class="yyy-card" v-for="p in projects">
-          <a :href="p.url" target="_blank" v-if="p.image">
-            <img :src="p.image" :alt="p.title" class="image-responsive"/>
-          </a>
-          <div class="text-xs text-justify text-muted pl-3 pr-3 mt-3"
-               v-if="p.legend">{{p.legend}}</div>
-          <div v-if="p.embed" class="embed-responsive embed-responsive-narrow">
-            <iframe :src="p.embed" style="border:none;width:100%;"></iframe>
+        <h3 class="mt-3 mb-3">Publications</h3>
+        <div class="yyy-card row ml-0 mr-0" v-for="(p, index) in publications">
+          <div class="col-4">
+            <router-link :to="`/project/${index}`">
+              <img :src="p.image" :alt="p.title" class="image-responsive"/>
+            </router-link>
           </div>
-          <h3 class="mt-4">{{p.title}}</h3>
-          <div class="mt-3"></div>
-          <p v-for="d in p.descriptions" class="text-justify">
-            {{d}}
-          </p>
-          <div class="mt-3">
-            <b-button v-for="b in p.buttons"
-               class="mr-2"
-               variant="outline-secondary"
-               size="sm"
-               :href="b.link"
-               v-bind:key="b.name"
-               target="_blank">{{b.name}}</b-button>
-            <small v-if="p.ps" class="text-muted text-xs">
-              {{p.ps}}
-            </small>
+          <div class="col-8">
+            <router-link :to="`/project/${index}`">
+              <div class="text-bold text-dark">{{p.title}}</div>
+            </router-link>
+            <div class="mt-1">{{p.authors.join(', ')}}</div>
+            <div class="mt-1 font-italic text-muted">{{p.venue}}</div>
+            <div class="mt-1">
+              <b-button v-for="b in p.buttons" squared size="sm"
+                class="mr-2"  variant="outline-info" v-bind:key="b.name"
+                :href="b.link"  target="_blank">{{b.name}}</b-button>
+            </div>
           </div>
         </div>
 
@@ -103,12 +95,12 @@
 </template>
 
 <script>
-  import {projects, bio} from '../data'
+  import {publications, bio} from '../data'
   export default {
     name: 'MainPage',
     data() {
       return {
-        projects: projects,
+        publications: publications,
         bio: bio
       }
     }
@@ -116,8 +108,7 @@
 </script>
 
 <style>
-  a.link-primary
-  {
+  a.link-primary {
     color: #107360;
   }
 
@@ -139,10 +130,7 @@
     box-shadow: 0 1px 4px rgba(0,0,0,.04);
     border: 1px solid rgba(0,0,0,.09);
     border-radius: 2px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     background-color: #fff;
     margin-bottom: 20px;
   }

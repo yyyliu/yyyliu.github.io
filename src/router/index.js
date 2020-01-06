@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import MainPage from '../pages/MainPage.vue'
 import VitaPage from '../pages/VitaPage.vue'
 import RecruitPage from '../pages/RecruitPage.vue'
+import ProjectPage from '../pages/ProjectPage.vue'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ let router = new Router({
       name: 'interview',
       meta: { title: 'Interview Study' },
       component: RecruitPage
+    },
+    {
+      path: '/project/:id',
+      meta: {title: 'Publication | Yang Liu'},
+      component: ProjectPage
     }
   ]
 })
