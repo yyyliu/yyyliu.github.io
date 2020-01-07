@@ -10,6 +10,8 @@
           <small><a href="/#/cv" target="_blank" class="no-link">CV</a></small>
           <small class="ml-3 cursor-pointer" @click="scrollTo('pubs')">
             Publications</small>
+          <small class="ml-3 cursor-pointer" @click="scrollTo('projects')">
+            Projects</small>
         </div>
       </div>
     </div>
@@ -56,7 +58,7 @@
           </div>
         </div>
 
-        <!--Project-->
+        <!--Publications-->
         <h3 class="mt-3 mb-3" id="pubs">Publications</h3>
         <div class="yyy-card row ml-0 mr-0" v-for="(p, index) in publications">
           <div class="col-4">
@@ -78,6 +80,27 @@
           </div>
         </div>
 
+        <!--Projects-->
+        <h3 class="mt-3 mb-3" id="projects">Projects</h3>
+        <div class="row">
+          <div v-for="p in projects" class="col-6">
+            <div class="yyy-card pl-3">
+              <div><a :href="p.url" target="_blank">
+                <img :src="p.thumbnail" :alt="p.title" class="image-responsive" /></a></div>
+              <div class="mt-2 font-weight-bold">
+                <a :href="p.url" target="_blank" class="text-dark">{{p.title}}</a>
+              </div>
+              <div class="mt-1">{{p.summary}}</div>
+              <div class="mt-2">
+                <b-button v-for="b in p.buttons" squared size="sm"
+                          class="mr-2"  variant="outline-info" v-bind:key="b.name"
+                          :href="b.link"  target="_blank">{{b.name}}</b-button>
+                <small v-if="p.ps" class="text-muted">{{p.ps}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!--Footer-->
         <div class="mt-5"></div>
         <hr>
@@ -91,12 +114,13 @@
 </template>
 
 <script>
-  import {publications, bio} from '../data'
+  import {publications, bio, projects} from '../data'
   export default {
     name: 'MainPage',
     data() {
       return {
         publications: publications,
+        projects: projects,
         bio: bio
       }
     },

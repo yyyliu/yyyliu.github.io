@@ -97,9 +97,31 @@ const publications = [
 
 const projects = [
   {
+    url: 'https://github.com/uwdata/multiverse-spec',
+    thumbnail: '/build/images/boba-thumb.jpg',
+    title: 'Boba',
+    summary: 'An open-source python package for authoring and executing multiverse analysis with ease.',
+    buttons: [
+      {name: 'GitHub', link: 'https://github.com/uwdata/multiverse-spec'},
+      {name: 'PyPI', link: 'https://pypi.org/project/boba/0.1.3/'}
+    ]
+  },
+  {
+    url: 'https://github.com/uwdata/latent-space-cartography',
+    thumbnail: '/build/images/lsc-thumb.jpg',
+    title: 'Latent Space Cartography',
+    summary: 'A visual analysis tool for mapping and comparing meaningful "semantic" dimensions in latent spaces.',
+    buttons: [
+      {name: 'GitHub', link: 'https://github.com/uwdata/latent-space-cartography'},
+      {name: 'paper', link: 'http://localhost:8080/build/misc/lsc.pdf'}
+    ]
+  },
+  {
     url: 'https://altizure.com',
     image: '/build/images/altizure.jpg',
+    thumbnail: '/build/images/altizure-thumb.jpg',
     title: 'Altizure',
+    summary: 'A cloud platform for automatic 3D reconstruction to turn drone photographs into 3D models.',
     descriptions: [
       'Altizure is a cloud platform for automatic 3D reconstruction to turn drone photographs into 3D models. Here I worked as a full-stack developer on every aspect of the web platform, including both front ends and back ends. As a team of two, we built a portal with an in-house cluster to run reconstruction parallelly and a fast viewer to browse, share and do quick tasks on generated 3D models. Within a year and a half, we succeeded in growing our user base from zero to more than 7,000 activated users.'
     ],
@@ -112,7 +134,9 @@ const projects = [
   },
   {
     image: '/build/images/kinect.jpg',
+    thumbnail: '/build/images/kinect-thumb.jpg',
     title: 'Make the Intangible Tangible',
+    summary: 'A creative project where we traced the movement of the human body and turned it into 3D-printed objects.',
     descriptions: [
       'It is a creative project done in collaboration with three students from China Academy of Arts. At that time, I was interested in Kinect and thought about how we could record the movement of the human body in 3D and turned that into art. The movement of the hand is transient and intangible, but to record the curve and turn it into 3D printing would make it a concrete, permanent object. So I built a demo allowing users to draw arbitrary 3D "painting" with their hands which could later be turned into 3D printed souvenirs.',
       'It was demonstrated in several locations. It was one of the central attractions in the HKIE Hi-Tech Fiesta 2014.'
@@ -149,4 +173,4 @@ const bio = [
   ]
 ]
 
-export {publications, bio}
+export {publications, projects, bio}
