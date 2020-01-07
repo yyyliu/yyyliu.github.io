@@ -2,9 +2,14 @@
   <div>
     <!-- Header -->
     <div class="simple-header bg-mint">
-      <div class="center-block content-width">
-        <div class="pl-3 pr-3">
-          <span>Yang Liu</span>
+      <div class="center-block content-width d-flex justify-content-between">
+        <div class="ml-3 mr-3 font-weight-bold">
+          <a href="/" class="no-link">Yang Liu</a>
+        </div>
+        <div class="mr-3 text-bold">
+          <small><a href="/#/cv" target="_blank" class="no-link">CV</a></small>
+          <small class="ml-3 cursor-pointer" @click="scrollTo('pubs')">
+            Publications</small>
         </div>
       </div>
     </div>
@@ -52,7 +57,7 @@
         </div>
 
         <!--Project-->
-        <h3 class="mt-3 mb-3">Publications</h3>
+        <h3 class="mt-3 mb-3" id="pubs">Publications</h3>
         <div class="yyy-card row ml-0 mr-0" v-for="(p, index) in publications">
           <div class="col-4">
             <router-link :to="`/project/${index}`">
@@ -94,6 +99,12 @@
         publications: publications,
         bio: bio
       }
+    },
+    methods: {
+      scrollTo (h) {
+        let top = document.getElementById(h).offsetTop
+        window.scrollTo(0, top)
+      }
     }
   }
 </script>
@@ -103,11 +114,16 @@
     color: #107360;
   }
 
+  .no-link, .no-link:link, .no-link:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
   .simple-header
   {
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
     padding:10px;
-    font-family: bernadette, LatoLatin, 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: LatoLatin, 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 1.4em;
   }
 
@@ -190,5 +206,9 @@
   .text-bold
   {
     font-weight: 500
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
   }
 </style>
