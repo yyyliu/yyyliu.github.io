@@ -67,12 +67,12 @@ const papers = [
     title: 'Paths Explored, Paths Omitted, Paths Obscured: Decision Points & Selective Reporting in End-to-End Data Analysis',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     time: '2020',
-    status: 'conditionally accepted'
+    status: 'to appear'
   },
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
     title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
-    venue: 'arXiv',
+    venue: 'arXiv preprint arXiv:1911.00568',
     time: '2019'
   },
   {
@@ -148,13 +148,13 @@ const service = [
   },
   {
     name: 'Graduate Admission Committee',
-    time: '2019',
+    time: '2018 - 2019',
     location: 'University of Washington',
-    desc: 'Reviewed 27 applications to the Ph.D. program of the Allen School of Computer Science.'
+    desc: 'Reviewed 63 applications to the Ph.D. program of the Allen School of Computer Science.'
   },
   {
     name: 'Co-Organizer: Interactive Systems Seminar',
-    time: '2018 - Present',
+    time: '2018 - 2019',
     location: 'University of Washington',
     desc: 'Co-organized a weekly seminar for reading and discussing HCI papers.'
   }
