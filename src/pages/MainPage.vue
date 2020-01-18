@@ -6,7 +6,7 @@
         <div class="ml-3 mr-3 font-weight-bold">
           <a href="/" class="no-link">Yang Liu</a>
         </div>
-        <div class="mr-3 text-bold">
+        <div class="mr-3 text-bold d-none d-sm-block">
           <small><a href="/#/cv" target="_blank" class="no-link">CV</a></small>
           <small class="ml-3 cursor-pointer" @click="scrollTo('pubs')">
             Publications</small>
@@ -18,18 +18,16 @@
     <!-- Content -->
     <div class="center-block content-width text-left">
       <div class="pl-3 pr-3">
-        <div class="mt-5"></div>
-
-        <div>
+        <div class="d-md-flex mt-3 mt-md-5">
           <!--Image-->
-          <div class="media-left pr-3">
+          <div class="mr-3 text-center">
             <img src="/build/images/me.jpg"
                  alt="This is me"
                  style="height: 200px"
                  class="image-circle"/>
           </div>
           <!--Short Bio-->
-          <div class="media-body div-bio">
+          <div class="w-100 mt-3 mt-md-0 div-bio">
             <p v-for="block in bio" class="text-justify">
               <span v-for="part in block">
                 <span v-if="!part.url">{{part.text}}</span>
@@ -61,12 +59,12 @@
         <!--Publications-->
         <h3 class="mt-3 mb-3" id="pubs">Publications</h3>
         <div class="yyy-card row ml-0 mr-0" v-for="(p, index) in publications">
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
             <router-link :to="`/project/${index}`">
               <img :src="p.thumbnail" :alt="p.title" class="image-responsive"/>
             </router-link>
           </div>
-          <div class="col-8">
+          <div class="col-12 col-sm-8">
             <router-link :to="`/project/${index}`">
               <div class="text-bold text-dark">{{p.title}}</div>
             </router-link>
@@ -83,7 +81,7 @@
         <!--Projects-->
         <h3 class="mt-3 mb-3" id="projects">Projects</h3>
         <div class="row">
-          <div v-for="p in projects" class="col-6">
+          <div v-for="p in projects" class="col-12 col-sm-6">
             <div class="yyy-card pl-3">
               <div><a :href="p.url" target="_blank">
                 <img :src="p.thumbnail" :alt="p.title" class="image-responsive" /></a></div>
@@ -102,7 +100,7 @@
         </div>
 
         <!--Footer-->
-        <div class="mt-5"></div>
+        <div class="mt-3 mt-md-4"></div>
         <hr>
         <div class="m-3 text-center text-muted text-xs">
           Copyright © 2016-2020 Yang Liu
