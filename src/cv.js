@@ -66,8 +66,7 @@ const papers = [
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
     title: 'Paths Explored, Paths Omitted, Paths Obscured: Decision Points & Selective Reporting in End-to-End Data Analysis',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
-    time: '2020',
-    status: 'to appear'
+    time: '2020'
   },
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
@@ -137,18 +136,24 @@ const work = [
  {
     name: '',
     time: '',
+    location: '',
     desc: ''
  }
  */
 const service = [
   {
-    name: 'Reviewer',
-    time: '2019',
-    location: 'ACM SIGCHI 2020'
+    name: 'External Reviewer',
+    time: '2019-2020',
+    location: 'ACM SIGCHI 2020, IEEE InfoVis 2020, IEEE VAST 2020'
+  },
+  {
+    name: 'CSE Mentoring Program',
+    time: '2019-2020',
+    location: 'University of Washington'
   },
   {
     name: 'Graduate Admission Committee',
-    time: '2018 - 2019',
+    time: '2018, 2019',
     location: 'University of Washington',
     desc: 'Reviewed 63 applications to the Ph.D. program of the Allen School of Computer Science.'
   },

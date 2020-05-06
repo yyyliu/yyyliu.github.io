@@ -160,7 +160,7 @@ const bio = [
     {text: ' at the'},
     {text: ' University of Washington', url: 'https://www.cs.washington.edu/'},
     {text: ', working with Prof.'},
-    {text: ' Jeffery Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
+    {text: ' Jeffrey Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
     {text: '. In the past, I have been affiliated with the'},
     {text: ' Hong Kong University of Science and Technology', url: 'http://www.ust.hk/'},
     {text: ','},
