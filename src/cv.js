@@ -63,6 +63,20 @@ const education = [
  */
 const papers = [
   {
+    author: 'Yang Liu, Alex Kale, Tim Althoff, Jeffrey Heer',
+    title: 'Boba: Authoring and Visualizing Multiverse Analyses',
+    venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
+    time: '2020',
+    status: 'in submission'
+  },
+  {
+    author: 'Ge Zhang, Mike Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
+    title: '[Title Redacted For Anonymity]',
+    venue: 'IEEE International Conference on Data Mining',
+    time: '2020',
+    status: 'in submission'
+  },
+  {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
     title: 'Paths Explored, Paths Omitted, Paths Obscured: Decision Points & Selective Reporting in End-to-End Data Analysis',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
@@ -106,26 +120,35 @@ const papers = [
  */
 const work = [
   {
+    title: 'Adobe Research, Breakthrough Interactions and Graphics Lab',
+    start: 'Apr. 2020',
+    end: 'Jul. 2020',
+    location: 'Seattle, WA',
+    role: 'Research Intern',
+    desc: [
+      'Worked with Leo Zhicheng Liu and Fan Du on mining visualization critiques.'
+    ]
+  },
+  {
     title: 'Everest Innovation Technology, Altizure.com',
     start: 'Apr. 2015',
     end: 'Dec. 2016',
     location: 'Hong Kong',
     role: 'Full Stack Developer',
     desc: [
-      'Designed, prototyped and implemented a web platform from scratch as the very first developers in the team, which now grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
-      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map  of 100km2 in area, which employed Level of detail rendering based on a quadtree to maintain interactive framerates across all platforms, as well as various compression methods for fast loading.',
-      'Built a desktop viewer on Windows, Mac and Linux for downloading 3D models and viewing offline.',
-      'Involved in building a distributed system running reconstruction jobs in parallel on an in-house cluster.'
+      'Designed, prototyped and implemented a web platform from scratch as the very first developers in the team, which grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
+      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map of 100km2 in area. The viewer employed level of detail rendering based on a quadtree to maintain interactive framerates across all platforms, as well as various compression methods for fast loading.',
+      'Built a desktop viewer on Windows, Mac and Linux for downloading 3D models and viewing offline.'
     ]
   },
   {
-    title: 'Microsoft Corporation, Office Big Data',
+    title: 'Microsoft, Office Big Data',
     start: 'Sep. 2014',
     end: 'Apr. 2015',
     location: 'Beijing, China',
     role: 'Software Development Engineer (SDE)',
     desc: [
-      'Developed a cooking pipeline to process huge volumes of SharePoint server log (PB per log per day) on MapReduce clusters and provided clean, valid data through data API for internal teams to do analytics.',
+      'Developed a cooking pipeline to process large volumes of SharePoint server log (PB per log per day) provided clean, valid data through data API for data analysis teams.',
       'Implemented active monitoring to automatically check scheduled job running time and ensure data quality in the above cooking pipeline, in order to meet the SLA level of 99.9%.',
       'Maintained more than 100 daily jobs in Office data pipelines and provided support on data issues.'
     ]

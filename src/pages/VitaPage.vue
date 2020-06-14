@@ -132,7 +132,7 @@
           }
           return at
         }).join(',')
-        let s = `${author}, "${p.title}", <em>${p.venue}</em>, ${p.time}`
+        let s = `${author}. "${p.title}". <em>${p.venue}</em>, ${p.time}`
         s += p.status ? `, <i>${p.status}</i>.` : '.'
         return s
       }
