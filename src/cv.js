@@ -148,7 +148,7 @@ const work = [
     location: 'Beijing, China',
     role: 'Software Development Engineer (SDE)',
     desc: [
-      'Developed a cooking pipeline to process large volumes of SharePoint server log (PB per log per day) provided clean, valid data through data API for data analysis teams.',
+      'Developed a cooking pipeline to process large volumes of SharePoint server log (PB per log per day) and provided clean, valid data through data API for data analysis teams.',
       'Implemented active monitoring to automatically check scheduled job running time and ensure data quality in the above cooking pipeline, in order to meet the SLA level of 99.9%.',
       'Maintained more than 100 daily jobs in Office data pipelines and provided support on data issues.'
     ]
@@ -167,7 +167,7 @@ const service = [
   {
     name: 'External Reviewer',
     time: '2019-2020',
-    location: 'ACM SIGCHI 2020, IEEE InfoVis 2020, IEEE VAST 2020'
+    location: 'ACM SIGCHI 2020, IEEE InfoVis 2020, IEEE VAST 2020, ACM CSCW 2020'
   },
   {
     name: 'CSE Mentoring Program',
