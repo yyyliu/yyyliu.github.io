@@ -1,5 +1,22 @@
 const publications = [
   {
+    url: 'https://arxiv.org/abs/2007.05551',
+    image: '/build/images/vis20-boba.png',
+    thumbnail: '/build/images/vis20-boba-thumb.jpg',
+    legend: 'Authoring and visualizing multiverse analyses with Boba. Users start by annotating a script with analytic decisions (a), from which Boba synthesizes a multiplex of possible analysis variants (b). To interpret the results from all analyses, users start with a graph of analytic decisions (c), where sensitive decisions are highlighted in darker blues. Clicking a decision node allows users to compare point estimates (d, blue dots) and uncertainty distributions (d, gray area) between different alternatives. Users may further drill down to assess the fit quality of individual models (e) by comparing observed data (orange) with model predictions (teal).',
+    title: 'Boba: Authoring and visualizing multiverse analyses',
+    authors: ['Yang Liu', 'Alex Kale', 'Tim Althoff', 'Jeffrey Heer'],
+    venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST), 2020 (under review)',
+    descriptions: [
+      'Multiverse analysis is an approach to data analysis in which all "reasonable" analytic decisions are evaluated in parallel and interpreted collectively, in order to foster robustness and transparency. However, specifying a multiverse is demanding because analysts must manage myriad variants from a cross-product of analytic decisions, and the results require nuanced interpretation. We contribute Boba: an integrated domain-specific language (DSL) and visual analysis system for authoring and reviewing multiverse analyses. With the Boba DSL, analysts write the shared portion of analysis code only once, alongside local variations defining alternative decisions, from which the compiler generates a multiplex of scripts representing all possible analysis paths. The Boba Visualizer provides linked views of model results and the multiverse decision space to enable rapid, systematic assessment of consequential decisions and robustness, including sampling uncertainty and model fit. We demonstrate Boba\'s utility through two data analysis case studies, and reflect on challenges and design opportunities for multiverse analysis software.',
+    ],
+    buttons: [
+      {name: 'paper', link: 'https://arxiv.org/abs/2007.05551', icon: 'fa-file-o'},
+      {name: 'software', link: 'https://github.com/uwdata/multiverse-spec', icon: 'fa-code'},
+      {name: 'bibtex', link: '/build/bibtex/liu2020-boba.txt', icon: 'fa-quote-left'}
+    ]
+  },
+  {
     url: 'https://arxiv.org/abs/1910.13602',
     image: '/build/images/chi20.png',
     thumbnail: '/build/images/chi20-thumb.jpg',

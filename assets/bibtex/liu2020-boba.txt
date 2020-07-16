@@ -1,0 +1,8 @@
+@misc{liu2020boba,
+  title={Boba: Authoring and visualizing multiverse analyses},
+  author={Yang Liu and Alex Kale and Tim Althoff and Jeffrey Heer},
+  year={2020},
+  eprint={2007.05551},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC}
+}

@@ -69,7 +69,7 @@
             <div>
               <b>{{s.name}}</b><span v-if="s.location">, {{s.location}}</span>
             </div>
-            <div v-if="s.desc">{{s.desc}}</div>
+            <div v-if="s.desc"><div v-for="d in s.desc">{{d}}</div></div>
           </div>
         </div>
       </div>

@@ -67,14 +67,14 @@ const papers = [
     title: 'Boba: Authoring and Visualizing Multiverse Analyses',
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
     time: '2020',
-    status: 'in submission'
+    status: 'under review'
   },
   {
     author: 'Ge Zhang, Mike Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
     title: '[Title Redacted For Anonymity]',
     venue: 'IEEE International Conference on Data Mining',
     time: '2020',
-    status: 'in submission'
+    status: 'under review'
   },
   {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
@@ -166,25 +166,36 @@ const work = [
 const service = [
   {
     name: 'External Reviewer',
-    time: '2019-2020',
-    location: 'ACM SIGCHI 2020, IEEE InfoVis 2020, IEEE VAST 2020, ACM CSCW 2020'
+    time: '2019 - 2020',
+    desc: ['The ACM Conference on Human Factors in Computing Systems (CHI), 2020', 
+      'The IEEE Information Visualization (InfoVis) Conference, 2020',
+      'The IEEE Conference on Visual Analytics Science and Technology (VAST), 2020',
+      'The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020']
+  },
+  {
+    name: 'Mentoring',
+    time: '2020',
+    location: 'Boba Project',
+    desc: ['Jiarong Zhang, BS Computer Science & Engineering \'16',
+      'Shiven Bhatt, BS Computer Science & Engineering \'19']
   },
   {
     name: 'CSE Mentoring Program',
-    time: '2019-2020',
-    location: 'University of Washington'
+    time: '2019 - 2020',
+    // location: 'University of Washington',
+    desc: ['Organized escape rooms, ice cream outings, and virtual dinners for my first year mentees.']
   },
   {
     name: 'Graduate Admission Committee',
     time: '2018, 2019',
-    location: 'University of Washington',
-    desc: 'Reviewed 63 applications to the Ph.D. program of the Allen School of Computer Science.'
+    // location: 'University of Washington',
+    desc: ['Reviewed 63 applications to the Ph.D. program of UW CSE.']
   },
   {
     name: 'Co-Organizer: Interactive Systems Seminar',
     time: '2018 - 2019',
-    location: 'University of Washington',
-    desc: 'Co-organized a weekly seminar for reading and discussing HCI papers.'
+    // location: 'University of Washington',
+    desc: ['Co-organized a weekly seminar for reading and discussing HCI papers.']
   }
 ]
 
