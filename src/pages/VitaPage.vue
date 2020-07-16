@@ -134,6 +134,7 @@
         }).join(',')
         let s = `${author}. "${p.title}". <em>${p.venue}</em>, ${p.time}`
         s += p.status ? `, <i>${p.status}</i>.` : '.'
+        s += p.accept_rate ? ` [${p.accept_rate}% Acceptance Rate]` : ''
         return s
       }
     }

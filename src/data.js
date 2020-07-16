@@ -167,7 +167,7 @@ const projects = [
 
 const bio = [
   [
-    {text: 'Hello! I\'m a 3rd year PhD student.'},
+    {text: 'Hello! I\'m a 4th year PhD student.'},
     {text: 'I research information visualization, with the general goal of promoting robust data analysis.'},
     {text: 'My current focus is to study how analyses might go awry and build new tools to improve reproducibility.'},
   ],
@@ -176,12 +176,10 @@ const bio = [
     {text: ' Interactive Data Lab', url: 'https://idl.cs.washington.edu/'},
     {text: ' at the'},
     {text: ' University of Washington', url: 'https://www.cs.washington.edu/'},
-    {text: ', working with Prof.'},
+    {text: ', advised by Prof.'},
     {text: ' Jeffrey Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
     {text: '. In the past, I have been affiliated with the'},
     {text: ' Hong Kong University of Science and Technology', url: 'http://www.ust.hk/'},
-    {text: ','},
-    {text: ' Carnegie Mellon University', url: 'https://www.ece.cmu.edu/'},
     {text: ','},
     {text: ' Microsoft China', url: 'https://www.microsoft.com/'},
     {text: ', and'},
