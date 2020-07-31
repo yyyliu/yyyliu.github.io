@@ -69,7 +69,7 @@ const papers = [
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
     accept_rate: '24',
     time: '2020',
-    status: 'under review'
+    status: 'conditionally accepted'
   },
   {
     author: 'Ge Zhang, Mike Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',

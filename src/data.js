@@ -3,7 +3,7 @@ const publications = [
     url: 'https://arxiv.org/abs/2007.05551',
     image: '/build/images/vis20-boba.png',
     thumbnail: '/build/images/vis20-boba-thumb.jpg',
-    legend: 'Authoring and visualizing multiverse analyses with Boba. Users start by annotating a script with analytic decisions (a), from which Boba synthesizes a multiplex of possible analysis variants (b). To interpret the results from all analyses, users start with a graph of analytic decisions (c), where sensitive decisions are highlighted in darker blues. Clicking a decision node allows users to compare point estimates (d, blue dots) and uncertainty distributions (d, gray area) between different alternatives. Users may further drill down to assess the fit quality of individual models (e) by comparing observed data (orange) with model predictions (teal).',
+    legend: 'Authoring and visualizing multiverse analyses with Boba. Users start by annotating a script with analytic decisions (a), from which Boba synthesizes a multiplex of possible analysis variants (b). To interpret the results from all analyses, users start with a graph of analytic decisions (c), where sensitive decisions are highlighted in darker blues. Clicking a decision node allows users to compare point estimates (d, blue dots) and uncertainty distributions (d, gray area) between different alternatives. Users may further drill down to assess the fit quality of individual models (e) by comparing observed data (pink) with model predictions (teal).',
     title: 'Boba: Authoring and visualizing multiverse analyses',
     authors: ['Yang Liu', 'Alex Kale', 'Tim Althoff', 'Jeffrey Heer'],
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST), 2020 (under review)',
@@ -12,7 +12,9 @@ const publications = [
     ],
     buttons: [
       {name: 'paper', link: 'https://arxiv.org/abs/2007.05551', icon: 'fa-file-o'},
-      {name: 'software', link: 'https://github.com/uwdata/multiverse-spec', icon: 'fa-code'},
+      {name: 'software', link: 'https://github.com/uwdata/boba', icon: 'fa-code'},
+      {name: 'video', link: 'https://youtu.be/NtHrUm4_kyw', icon: 'fa-youtube-play'},
+      {name: 'appendix', link: 'https://osf.io/9dcfa/', icon: 'fa-file-o'},
       {name: 'bibtex', link: '/build/bibtex/liu2020-boba.txt', icon: 'fa-quote-left'}
     ]
   },
@@ -119,8 +121,8 @@ const projects = [
     title: 'Boba',
     summary: 'An open-source python package for authoring and executing multiverse analysis.',
     buttons: [
-      {name: 'GitHub', link: 'https://github.com/uwdata/multiverse-spec'},
-      {name: 'PyPI', link: 'https://pypi.org/project/boba/0.1.3/'}
+      {name: 'GitHub', link: 'https://github.com/uwdata/boba'},
+      {name: 'PyPI', link: 'https://pypi.org/project/boba/'}
     ]
   },
   {
