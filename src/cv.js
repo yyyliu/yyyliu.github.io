@@ -59,7 +59,7 @@ const education = [
     venue: 'Computer Graphics Forum (Proc. EuroVis)',
     time: '2019',
     accept_rate: '31',
-    status: 'in submission'
+    status: 'under review'
   }
  */
 const papers = [
@@ -69,14 +69,7 @@ const papers = [
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
     accept_rate: '24',
     time: '2020',
-    status: 'conditionally accepted'
-  },
-  {
-    author: 'Ge Zhang, Mike Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
-    title: 'Title Redacted For Anonymity',
-    venue: 'IEEE International Conference on Data Mining',
-    time: '2020',
-    status: 'under review'
+    status: 'to appear'
   },
   {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
@@ -84,12 +77,6 @@ const papers = [
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     accept_rate: '24',
     time: '2020'
-  },
-  {
-    author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
-    title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
-    venue: 'arXiv preprint arXiv:1911.00568',
-    time: '2019'
   },
   {
     author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
@@ -111,6 +98,28 @@ const papers = [
     time: '2014',
     accept_rate: '29',
     venue: 'Pacific Visualization Symposium (PacificVis)'
+  }
+]
+
+const papers_unrefered = [
+  {
+    author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
+    title: 'Mining Design Feedback from Visualization Comments on Social Platforms',
+    venue: 'ACM Human Factors in Computing Systems (CHI)',
+    time: '2021',
+    status: 'under review'
+  },
+  {
+    author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
+    title: 'CORAL: COde RepresentAtion Learning with Weakly-Supervised Transformers for Analyzing Data Analysis',
+    venue: 'arXiv preprint arXiv:2008.12828',
+    time: '2020',
+  },
+  {
+    author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
+    title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
+    venue: 'arXiv preprint arXiv:1911.00568',
+    time: '2019'
   }
 ]
 
@@ -271,4 +280,4 @@ const teaching = [
   }
 ]
 
-export {meta, education, papers, work, awards, teaching, service}
+export {meta, education, papers, work, awards, teaching, service, papers_unrefered}

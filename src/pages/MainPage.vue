@@ -52,6 +52,11 @@
                         href="https://github.com/yyyliu" target="_blank">
                 <i class="fab fa-github mr-1"></i>
                 GitHub</b-button>
+              <b-button class="ml-2" squared size="sm" variant="outline-secondary"
+                        href="https://scholar.google.com/citations?user=8Y6_oOgAAAAJ" target="_blank">
+                <i class="fab fa-google mr-1"></i>
+                Google Scholar
+              </b-button>
             </p>
           </div>
         </div>

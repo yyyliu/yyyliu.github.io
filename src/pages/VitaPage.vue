@@ -35,7 +35,14 @@
       <!--Publication-->
       <div>
         <section-header title="Publications"></section-header>
+        <!--referred-->
+        <div class="cv-role mb-2">refereed publications</div>
         <div v-for="paper in papers" class="text-justify">
+          <div v-html="getPaper(paper)" class="mb-3"></div>
+        </div>
+        <!--non-referred-->
+        <div class="cv-role mb-2">preprints</div>
+        <div v-for="paper in papers_unrefered" class="text-justify">
           <div v-html="getPaper(paper)" class="mb-3"></div>
         </div>
       </div>
@@ -100,7 +107,7 @@
 </template>
 
 <script>
-  import {meta, education, papers, work, awards, teaching, service} from '../cv'
+  import {meta, education, papers, work, awards, teaching, service, papers_unrefered} from '../cv'
   import SectionHeader from '../components/SectionHeader.vue'
 
   export default {
@@ -113,6 +120,7 @@
         meta: meta,
         education: education,
         papers: papers,
+        papers_unrefered: papers_unrefered,
         work: work,
         service: service,
         awards: awards,
