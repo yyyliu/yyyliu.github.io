@@ -41,7 +41,7 @@
             <!--Contact-->
             <p class="mt-1">
               <b-button squared size="sm" variant="outline-secondary"
-                        href="mailto:yliu0@cs.washington.ed">
+                        href="mailto:yliu0@cs.washington.edu">
                 <i class="far fa-envelope mr-1"></i>
                 Email</b-button>
               <b-button class="ml-2" squared size="sm" variant="outline-info"

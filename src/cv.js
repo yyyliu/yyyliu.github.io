@@ -261,6 +261,12 @@ const awards = [
  */
 const teaching = [
   {
+    course: 'CSE 442: Data Visualization',
+    time: '2020',
+    university: 'UW',
+    desc: 'Teaching Assistant'
+  },
+  {
     course: 'CSE 512: Data Visualization',
     time: '2019',
     university: 'UW',
