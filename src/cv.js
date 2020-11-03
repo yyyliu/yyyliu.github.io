@@ -182,7 +182,8 @@ const service = [
   {
     name: 'External Reviewer',
     time: '2019 - 2020',
-    desc: ['The ACM Conference on Human Factors in Computing Systems (CHI), 2020', 
+    desc: ['The ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021', 
+      'IEEE Transactions on Visualization & Computer Graphics (TVCG), 2021',
       'The IEEE Information Visualization (InfoVis) Conference, 2020',
       'The IEEE Conference on Visual Analytics Science and Technology (VAST), 2020',
       'The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020']

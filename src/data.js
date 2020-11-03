@@ -12,9 +12,10 @@ const publications = [
     ],
     buttons: [
       {name: 'paper', link: 'https://arxiv.org/abs/2007.05551', icon: 'fa-file-o'},
+      {name: 'appendix', link: 'https://osf.io/9dcfa/', icon: 'fa-file-o'},
       {name: 'software', link: 'https://github.com/uwdata/boba', icon: 'fa-code'},
       {name: 'video', link: 'https://youtu.be/NtHrUm4_kyw', icon: 'fa-youtube-play'},
-      {name: 'appendix', link: 'https://osf.io/9dcfa/', icon: 'fa-file-o'},
+      {name: 'talk', link: 'https://youtu.be/YWhjyAu0hZs?t=2533', icon: 'fa-youtube-play'},
       {name: 'bibtex', link: '/build/bibtex/liu2020-boba.txt', icon: 'fa-quote-left'}
     ]
   },
