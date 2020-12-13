@@ -102,13 +102,13 @@ const papers = [
 ]
 
 const papers_unrefered = [
-  {
+  /*{
     author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
     title: 'Mining Design Feedback from Visualization Comments on Social Platforms',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     time: '2021',
     status: 'under review'
-  },
+  },*/
   {
     author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
     title: 'CORAL: COde RepresentAtion Learning with Weakly-Supervised Transformers for Analyzing Data Analysis',
@@ -141,7 +141,7 @@ const work = [
     location: 'Seattle, WA',
     role: 'Research Intern',
     desc: [
-      'Worked with Leo Zhicheng Liu and Fan Du on mining visualization critiques.'
+      'Mentors: Dr. Leo Zhicheng Liu and Dr. Fan Du'
     ]
   },
   {
@@ -181,12 +181,13 @@ const work = [
 const service = [
   {
     name: 'External Reviewer',
-    time: '2019 - 2020',
-    desc: ['The ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021', 
+    time: '2019 - 2021',
+    desc: ['ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021', 
       'IEEE Transactions on Visualization & Computer Graphics (TVCG), 2021',
-      'The IEEE Information Visualization (InfoVis) Conference, 2020',
-      'The IEEE Conference on Visual Analytics Science and Technology (VAST), 2020',
-      'The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020']
+      'ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020-2021',
+      'IEEE Pacific Visualization Symposium (PacificVis), 2021',
+      'IEEE Information Visualization (InfoVis) Conference, 2020',
+      'IEEE Conference on Visual Analytics Science and Technology (VAST), 2020']
   },
   {
     name: 'Mentoring',
@@ -196,16 +197,16 @@ const service = [
       'Shiven Bhatt, BS Computer Science & Engineering \'19']
   },
   {
+    name: 'Graduate Admission Committee',
+    time: '2018 - 2020',
+    // location: 'University of Washington',
+    desc: ['Reviewed 73 applications to the Ph.D. program of UW CSE.']
+  },
+  {
     name: 'CSE Mentoring Program',
     time: '2019 - 2020',
     // location: 'University of Washington',
     desc: ['Organized escape rooms, ice cream outings, and virtual dinners for my first year mentees.']
-  },
-  {
-    name: 'Graduate Admission Committee',
-    time: '2018, 2019',
-    // location: 'University of Washington',
-    desc: ['Reviewed 63 applications to the Ph.D. program of UW CSE.']
   },
   {
     name: 'Co-Organizer: Interactive Systems Seminar',
