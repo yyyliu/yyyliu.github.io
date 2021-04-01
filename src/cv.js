@@ -64,12 +64,18 @@ const education = [
  */
 const papers = [
   {
+    author: 'Martin Schweinsberg, Michael Feldman, Nicola Staub, Olmo R van den Akker, Robbie van Aert, Marcel ALM Van Assen, Yang Liu, Tim Althoff, Jeffrey Heer, Alex Kale, Zainab Mohamed, et al',
+    title: 'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis',
+    venue: 'Organizational Behavior and Human Decision Processes',
+    time: '2021',
+    status: 'to appear'
+  },
+  {
     author: 'Yang Liu, Alex Kale, Tim Althoff, Jeffrey Heer',
     title: 'Boba: Authoring and Visualizing Multiverse Analyses',
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
     accept_rate: '24',
-    time: '2020',
-    status: 'to appear'
+    time: '2021'
   },
   {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
@@ -102,13 +108,20 @@ const papers = [
 ]
 
 const papers_unrefered = [
-  /*{
-    author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
-    title: 'Mining Design Feedback from Visualization Comments on Social Platforms',
-    venue: 'ACM Human Factors in Computing Systems (CHI)',
+  {
+    author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
+    title: 'Approximation and Progressive Display of Multiverse Analyses',
+    venue: 'IEEE Visualization Conference',
     time: '2021',
     status: 'under review'
-  },*/
+  },
+  {
+    author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
+    title: 'Harvesting Design Feedback from Visualization Comments on Social Platforms',
+    venue: 'IEEE Visualization Conference',
+    time: '2021',
+    status: 'under review'
+  },
   {
     author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
     title: 'CORAL: COde RepresentAtion Learning with Weakly-Supervised Transformers for Analyzing Data Analysis',
@@ -182,12 +195,15 @@ const service = [
   {
     name: 'External Reviewer',
     time: '2019 - 2021',
-    desc: ['ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021', 
+    desc: [
+      'ACM Transactions on Computer-Human Interaction (TOCHI), 2021',
       'IEEE Transactions on Visualization & Computer Graphics (TVCG), 2021',
+      'ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021', 
       'ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020-2021',
       'IEEE Pacific Visualization Symposium (PacificVis), 2021',
       'IEEE Information Visualization (InfoVis) Conference, 2020',
-      'IEEE Conference on Visual Analytics Science and Technology (VAST), 2020']
+      'IEEE Conference on Visual Analytics Science and Technology (VAST), 2020'
+    ]
   },
   {
     name: 'Mentoring',
@@ -262,6 +278,12 @@ const awards = [
  }
  */
 const teaching = [
+  {
+    course: 'CSE 512: Data Visualization',
+    time: '2021',
+    university: 'UW',
+    desc: 'Teaching Assistant'
+  },
   {
     course: 'CSE 442: Data Visualization',
     time: '2020',
