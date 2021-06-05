@@ -168,9 +168,9 @@ const work = [
     location: 'Hong Kong',
     role: 'Full Stack Developer',
     desc: [
-      'Designed, prototyped and implemented a web platform from scratch as the very first developers in the team, which grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
-      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map. The viewer employed level of detail rendering based on a quadtree to maintain interactive frame rates across all platforms, as well as various compression methods for fast loading.',
-      'Built a desktop viewer on Windows, macOS and Linux for downloading 3D models and viewing offline.'
+      'Designed, prototyped, and implemented a web platform from scratch as the very first developers in the team, which grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
+      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map. The viewer employed level-of-detail rendering based on a quadtree to maintain interactive frame rates across all platforms, as well as various compression methods for fast loading.',
+      'Built a desktop viewer on Windows, macOS, and Linux for downloading 3D models and viewing offline.'
     ]
   },
   {
@@ -180,8 +180,8 @@ const work = [
     location: 'Beijing, China',
     role: 'Software Development Engineer (SDE)',
     desc: [
-      'Developed a cooking pipeline to process large volumes of SharePoint server log (PB per log per day) and provided clean, valid data through data API for data analysis teams.',
-      'Implemented active monitoring to automatically check scheduled job running time and ensure data quality in the above cooking pipeline, in order to meet the SLA level of 99.9%.',
+      'Developed a data cleaning pipeline to process large volumes of SharePoint server log (PB per log per day) and provided clean, valid data through data API for data analysis teams.',
+      'Implemented active monitoring to automatically check scheduled job running time and ensure data quality in the above pipeline, to meet the SLA level of 99.9%.',
       'Maintained more than 100 daily jobs in Office data pipelines and provided support on data issues.'
     ]
   }
