@@ -1,5 +1,5 @@
 const meta = {
-  homepage: 'http://yangliu.life/',
+  homepage: 'https://yangliu.life/',
   email: 'yliu0@uw.edu'
 }
 
@@ -10,17 +10,18 @@ const education = [
     start: 'Jul. 2017',
     end: '',
     location: 'Seattle, WA',
-    advisor: 'Jeffrey Heer'
+    advisor: 'Advisor: Jeffrey Heer'
   },
-  /* {
-     name: 'Carnegie Mellon University',
+  {
+    hide: 'true',
+    name: 'Carnegie Mellon University',
     degree: 'M.S. Electrical and Computer Engineering',
     start: '2017 Jan',
     end: '2017 May',
     location: 'Pittsburgh, PA',
     gpa: '4.0/4.0',
     desc: 'Completed 12 credits'
-  }, */
+  },
   {
     name: 'Hong Kong University of Science and Technology',
     degree: 'M.Phil. Computer Science',
@@ -29,7 +30,7 @@ const education = [
     location: 'Hong Kong',
     gpa: '3.98/4.3',
     thesis: 'large-scale visualization of 3D urban reconstruction',
-    advisor: 'Long Quan and Huamin Qu'
+    advisor: 'Advisors: Long Quan and Huamin Qu'
   },
   {
     name: 'Hong Kong University of Science and Technology',
@@ -72,65 +73,68 @@ const papers = [
   },
   {
     author: 'Yang Liu, Alex Kale, Tim Althoff, Jeffrey Heer',
-    title: 'Boba: Authoring and Visualizing Multiverse Analyses',
+    title: 'Boba: Authoring and visualizing multiverse analyses',
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
     accept_rate: '24',
     time: '2021'
   },
   {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
-    title: 'Paths Explored, Paths Omitted, Paths Obscured: Decision Points & Selective Reporting in End-to-End Data Analysis',
+    title: 'Paths explored, paths omitted, paths obscured: Decision points & selective reporting in end-to-end data analysis',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     accept_rate: '24',
     time: '2020'
   },
   {
     author: 'Yang Liu, Eunice Jun, Qisheng Li, Jeffrey Heer',
-    title: 'Latent Space Cartography: Visual Analysis of Vector Space Embeddings',
+    title: 'Latent space cartography: Visual analysis of vector space embeddings',
     venue: 'Computer Graphics Forum (Proc. EuroVis)',
     accept_rate: '31',
     time: '2019'
   },
   {
     author: 'Yang Liu, Jeffrey Heer',
-    title: 'Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps',
+    title: 'Somewhere over the rainbow: An empirical assessment of quantitative colormaps',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     accept_rate: '26',
     time: '2018'
   },
   {
     author: 'Guodao Sun, Yang Liu, Wenbin Wu, Ronghua Liang, Huamin Qu',
-    title: 'Embedding Temporal Display into Maps for Occlusion-Free Visualization of Spatio-temporal Data',
+    title: 'Embedding temporal display into maps for occlusion-free visualization of spatio-temporal data',
     time: '2014',
     accept_rate: '29',
     venue: 'Pacific Visualization Symposium (PacificVis)'
   }
 ]
 
-const papers_unrefered = [
+const papers_under_review = [
+]
+
+const papers_preprint = [
   {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
-    title: 'Approximation and Progressive Display of Multiverse Analyses',
+    title: 'Approximation and progressive display of multiverse analyses',
     venue: 'IEEE Visualization Conference',
     time: '2021',
     status: 'under review'
   },
   {
     author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
-    title: 'Harvesting Design Feedback from Visualization Comments on Social Platforms',
+    title: 'Harvesting design feedback from visualization comments on social platforms',
     venue: 'IEEE Visualization Conference',
     time: '2021',
     status: 'under review'
   },
   {
     author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
-    title: 'CORAL: COde RepresentAtion Learning with Weakly-Supervised Transformers for Analyzing Data Analysis',
+    title: 'CORAL: COde RepresentAtion Learning with weakly-supervised transformers for analyzing data analysis',
     venue: 'arXiv preprint arXiv:2008.12828',
     time: '2020',
   },
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
-    title: 'Goals, Process, and Challenges of Exploratory Data Analysis: An Interview Study',
+    title: 'Goals, process, and challenges of exploratory data analysis: An interview study',
     venue: 'arXiv preprint arXiv:1911.00568',
     time: '2019'
   }
@@ -165,8 +169,8 @@ const work = [
     role: 'Full Stack Developer',
     desc: [
       'Designed, prototyped and implemented a web platform from scratch as the very first developers in the team, which grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
-      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map of 100km2 in area. The viewer employed level of detail rendering based on a quadtree to maintain interactive framerates across all platforms, as well as various compression methods for fast loading.',
-      'Built a desktop viewer on Windows, Mac and Linux for downloading 3D models and viewing offline.'
+      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map. The viewer employed level of detail rendering based on a quadtree to maintain interactive frame rates across all platforms, as well as various compression methods for fast loading.',
+      'Built a desktop viewer on Windows, macOS and Linux for downloading 3D models and viewing offline.'
     ]
   },
   {
@@ -198,19 +202,14 @@ const service = [
     desc: [
       'ACM Transactions on Computer-Human Interaction (TOCHI), 2021',
       'IEEE Transactions on Visualization & Computer Graphics (TVCG), 2021',
-      'ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021', 
+      'ACM Symposium on User Interface Software and Technology (UIST), 2021',
+      'ACM Conference on Human Factors in Computing Systems (CHI), 2020-2021',
       'ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020-2021',
       'IEEE Pacific Visualization Symposium (PacificVis), 2021',
-      'IEEE Information Visualization (InfoVis) Conference, 2020',
-      'IEEE Conference on Visual Analytics Science and Technology (VAST), 2020'
+      'IEEE Visualization Conference (VIS), 2020-2021'
+      // 'IEEE Information Visualization (InfoVis) Conference, 2020',
+      // 'IEEE Conference on Visual Analytics Science and Technology (VAST), 2020'
     ]
-  },
-  {
-    name: 'Mentoring',
-    time: '2020',
-    location: 'Boba Project',
-    desc: ['Jiarong Zhang, BS Computer Science & Engineering \'16',
-      'Shiven Bhatt, BS Computer Science & Engineering \'19']
   },
   {
     name: 'Graduate Admission Committee',
@@ -270,44 +269,76 @@ const awards = [
 
 /**
  * Template
- {
-   course: '',
-   time: '',
-   university: '',
-   desc: ''
- }
+ {type: '', items: [...]}
  */
 const teaching = [
   {
-    course: 'CSE 512: Data Visualization',
-    time: '2021',
-    university: 'UW',
-    desc: 'Teaching Assistant'
+    type: 'Teaching Assistant',
+    desc: 'Responsibilities included developing new class materials, leading tutorials, grading all assignments, meeting with students individually, and creating GitHub repositories for student projects.',
+    items: [
+      {
+        title: 'CSE 512: Data Visualization',
+        time: '2021',
+        location: 'UW',
+        detail: 'Graduate course, 112 students'
+      },
+      {
+        title: 'CSE 442: Data Visualization',
+        time: '2020',
+        location: 'UW',
+        detail: 'Undergraduate course, 115 students'
+      },
+      {
+        title: 'CSE 512: Data Visualization',
+        time: '2019',
+        location: 'UW',
+        detail: 'Graduate course, 109 students'
+      },
+      {
+        title: 'COMP 5421: Computer Vision',
+        time: '2013',
+        location: 'HKUST',
+        detail: 'Graduate course'
+      },
+      {
+        title: 'COMP 2012: Object-Oriented Programming and Data Structure',
+        time: '2013',
+        location: 'HKUST',
+        detail: 'Undergraduate course'
+      }
+    ]
   },
   {
-    course: 'CSE 442: Data Visualization',
-    time: '2020',
-    university: 'UW',
-    desc: 'Teaching Assistant'
+    type: 'Guest Lecturer',
+    items: [
+      {
+        title:'Model Interpretability',
+        location: 'UW',
+        time: 'May 28, 2019'
+      }
+    ]
   },
   {
-    course: 'CSE 512: Data Visualization',
-    time: '2019',
-    university: 'UW',
-    desc: 'Teaching Assistant'
-  },
-  {
-    course: 'COMP 5421: Computer Vision',
-    time: '2013',
-    university: 'HKUST',
-    desc: 'Teaching Assistant for Prof. Chi Keung Tang'
-  },
-  {
-    course: 'COMP 2012: Object-Oriented Programming and Data Structure',
-    time: '2013',
-    university: 'HKUST',
-    desc: 'Teaching Assistant'
+    type: 'Advising Experience',
+    desc: 'Mentored 2 undergraduate and 1 graduate student on research projects.'
+    /*items: [
+      {
+        title: 'Bonnie (Mengyu) Chen',
+        time: 'visiting master\'s student',
+        location: 'UW'
+      },
+      {
+        title: 'Jiarong Zhang',
+        time: 'BS Computer Science & Engineering \'16',
+        location: 'UW'
+      },
+      {
+        title: 'Shiven Bhatt',
+        time: 'BS Computer Science & Engineering \'19',
+        location: 'UW'
+      }
+    ]*/
   }
 ]
 
-export {meta, education, papers, work, awards, teaching, service, papers_unrefered}
+export {meta, education, papers, work, awards, teaching, service, papers_preprint, papers_under_review}

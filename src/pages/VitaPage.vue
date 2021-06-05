@@ -23,7 +23,7 @@
           <div class="d-flex justify-content-between">
             <div>
               <span class="cv-role">{{edu.degree}}</span>
-              <span v-if="edu.advisor">, Advisor: {{edu.advisor}}</span>
+              <span v-if="edu.advisor">, {{edu.advisor}}</span>
               <span v-if="edu.desc">, {{edu.desc}}</span>
               <div v-if="edu.thesis">Thesis: {{edu.thesis}}</div>
             </div>
@@ -36,20 +36,27 @@
       <div>
         <section-header title="Publications"></section-header>
         <!--referred-->
-        <div class="cv-role mb-2">refereed publications</div>
+        <div class="cv-alt mb-2">Refereed Publications</div>
         <div v-for="paper in papers" class="text-justify">
           <div v-html="getPaper(paper)" class="mb-3"></div>
         </div>
-        <!--non-referred-->
-        <div class="cv-role mb-2">preprints</div>
-        <div v-for="paper in papers_unrefered" class="text-justify">
+        <!--under review-->
+        <div v-if="papers_under_review.length > 0">
+          <div class="cv-alt mb-2">Manuscripts Under Review</div>
+          <div v-for="paper in papers_under_review" class="text-justify">
+            <div v-html="getPaper(paper)" class="mb-3"></div>
+          </div>
+        </div>
+        <!--preprint-->
+        <div class="cv-alt mb-2">Preprints</div>
+        <div v-for="paper in papers_preprint" class="text-justify">
           <div v-html="getPaper(paper)" class="mb-3"></div>
         </div>
       </div>
 
       <!--Job-->
       <div>
-        <section-header title="Employment"></section-header>
+        <section-header title="Professional Experience"></section-header>
         <div v-for="w in work" class="text-justify">
           <div class="mb-3">
             <div class="d-flex justify-content-between">
@@ -67,6 +74,21 @@
         </div>
       </div>
 
+      <!--Teaching-->
+      <div>
+        <section-header title="Teaching"></section-header>
+        <div v-for="sec in teaching" class="mb-3">
+          <div class="cv-heading">{{sec.type}}</div>
+          <div v-if="sec.desc">{{sec.desc}}</div>
+          <ul v-if="sec.items" class="cv-list ml-3">
+            <li v-for="item in sec.items" class="mt-1">
+              {{item.title}}, {{item.time}}, {{item.location}}.
+              <span v-if="item.detail">{{item.detail}}.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!--Service-->
       <div>
         <section-header title="Service and Involvement"></section-header>
@@ -77,17 +99,6 @@
               <b>{{s.name}}</b><span v-if="s.location">, {{s.location}}</span>
             </div>
             <div v-if="s.desc"><div v-for="d in s.desc">{{d}}</div></div>
-          </div>
-        </div>
-      </div>
-
-      <!--Teaching-->
-      <div class="cv-alt">
-        <section-header title="Teaching"></section-header>
-        <div v-for="t in teaching" class="mb-2 d-flex">
-          <div class="cv-alt-time">{{t.time}}</div>
-          <div class="w-100">
-            <b>{{t.course}}</b>, {{t.university}}, {{t.desc}}
           </div>
         </div>
       </div>
@@ -107,7 +118,8 @@
 </template>
 
 <script>
-  import {meta, education, papers, work, awards, teaching, service, papers_unrefered} from '../cv'
+  import {meta, education, papers, work, awards, teaching, service,
+    papers_preprint, papers_under_review} from '../cv'
   import SectionHeader from '../components/SectionHeader.vue'
 
   export default {
@@ -120,7 +132,8 @@
         meta: meta,
         education: education,
         papers: papers,
-        papers_unrefered: papers_unrefered,
+        papers_preprint: papers_preprint,
+        papers_under_review: papers_under_review,
         work: work,
         service: service,
         awards: awards,
