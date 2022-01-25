@@ -68,21 +68,26 @@ const papers = [
     author: 'Martin Schweinsberg, Michael Feldman, Nicola Staub, Olmo R van den Akker, Robbie van Aert, Marcel ALM Van Assen, Yang Liu, Tim Althoff, Jeffrey Heer, Alex Kale, Zainab Mohamed, et al',
     title: 'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis',
     venue: 'Organizational Behavior and Human Decision Processes',
-    time: '2021',
-    status: 'to appear'
+    volume: 165,
+    pages: '228-249',
+    time: '2021'
   },
   {
     author: 'Yang Liu, Alex Kale, Tim Althoff, Jeffrey Heer',
     title: 'Boba: Authoring and visualizing multiverse analyses',
     venue: 'IEEE Transactions on Visualization and Computer Graphics (Proc. VAST)',
     accept_rate: '24',
-    time: '2021'
+    time: '2021',
+    volume: 27,
+    number: 2,
+    pages: '1753-1763'
   },
   {
     author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
     title: 'Paths explored, paths omitted, paths obscured: Decision points & selective reporting in end-to-end data analysis',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     accept_rate: '24',
+    pages: '406:1-406:14',
     time: '2020'
   },
   {
@@ -90,6 +95,9 @@ const papers = [
     title: 'Latent space cartography: Visual analysis of vector space embeddings',
     venue: 'Computer Graphics Forum (Proc. EuroVis)',
     accept_rate: '31',
+    volume: 38,
+    number: 3,
+    pages: '67-78',
     time: '2019'
   },
   {
@@ -97,6 +105,7 @@ const papers = [
     title: 'Somewhere over the rainbow: An empirical assessment of quantitative colormaps',
     venue: 'ACM Human Factors in Computing Systems (CHI)',
     accept_rate: '26',
+    pages: '598:1-598:12',
     time: '2018'
   },
   {
@@ -104,6 +113,7 @@ const papers = [
     title: 'Embedding temporal display into maps for occlusion-free visualization of spatio-temporal data',
     time: '2014',
     accept_rate: '29',
+    pages: '185-192',
     venue: 'Pacific Visualization Symposium (PacificVis)'
   }
 ]
@@ -112,20 +122,20 @@ const papers_under_review = [
 ]
 
 const papers_preprint = [
-  {
-    author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
-    title: 'Approximation and progressive display of multiverse analyses',
-    venue: 'IEEE Visualization Conference',
-    time: '2021',
-    status: 'under review'
-  },
-  {
-    author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
-    title: 'Harvesting design feedback from visualization comments on social platforms',
-    venue: 'IEEE Visualization Conference',
-    time: '2021',
-    status: 'under review'
-  },
+  // {
+  //   author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
+  //   title: 'Approximation and progressive display of multiverse analyses',
+  //   venue: 'IEEE Visualization Conference',
+  //   time: '2021',
+  //   status: 'under review'
+  // },
+  // {
+  //   author: 'Yang Liu, Zhicheng Liu, Fan Du, Jeffrey Heer',
+  //   title: 'Harvesting design feedback from visualization comments on social platforms',
+  //   venue: 'IEEE Visualization Conference',
+  //   time: '2021',
+  //   status: 'under review'
+  // },
   {
     author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
     title: 'CORAL: COde RepresentAtion Learning with weakly-supervised transformers for analyzing data analysis',
@@ -158,7 +168,7 @@ const work = [
     location: 'Seattle, WA',
     role: 'Research Intern',
     desc: [
-      'Mentors: Dr. Leo Zhicheng Liu and Dr. Fan Du'
+      'Built classification models to mine 3 million Reddit comments for design feedback.'
     ]
   },
   {
@@ -274,7 +284,7 @@ const awards = [
 const teaching = [
   {
     type: 'Teaching Assistant',
-    desc: 'Responsibilities included developing new class materials, leading tutorials, grading all assignments, meeting with students individually, and creating GitHub repositories for student projects.',
+    desc: 'Responsibilities included developing new class materials, leading tutorials, grading all assignments, and meeting with students individually.',
     items: [
       {
         title: 'CSE 512: Data Visualization',

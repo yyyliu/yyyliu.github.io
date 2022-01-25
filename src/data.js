@@ -170,7 +170,7 @@ const projects = [
 
 const bio = [
   [
-    {text: 'Hello! I\'m a 4th year PhD student.'},
+    {text: 'Hello! I\'m a final year PhD student.'},
     {text: 'I research information visualization, with the general goal of promoting robust data analysis.'},
     {text: 'My current focus is to study how analyses might go awry and build new tools to improve reproducibility.'},
   ],
