@@ -8,7 +8,9 @@
           <span class="cv-lastname">Liu</span>
         </div>
         <div class="cv-subtitle">
-          {{meta.homepage}} <span class="ml-2 mr-2">·</span> {{meta.email}}
+          {{meta.homepage}} <span class="ml-2 mr-2">·</span>
+          {{meta.email}} <span class="ml-2 mr-2">·</span>
+          {{meta.phone}}
         </div>
       </div>
 

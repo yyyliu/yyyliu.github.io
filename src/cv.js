@@ -1,5 +1,6 @@
 const meta = {
   homepage: 'https://yangliu.life/',
+  phone: '(xxx) xxx-xxxx',
   email: 'yliu0@uw.edu'
 }
 
@@ -8,9 +9,10 @@ const education = [
     name: 'University of Washington',
     degree: 'Ph.D. Computer Science',
     start: 'Jul. 2017',
-    end: '',
+    end: 'Jun. 2022',
     location: 'Seattle, WA',
-    advisor: 'Advisor: Jeffrey Heer'
+    // advisor: 'Advisor: Jeffrey Heer',
+    thesis: 'supporting reliable data analysis by evaluating all reasonable analytic decisions'
   },
   {
     hide: 'true',
@@ -30,7 +32,7 @@ const education = [
     location: 'Hong Kong',
     gpa: '3.98/4.3',
     thesis: 'large-scale visualization of 3D urban reconstruction',
-    advisor: 'Advisors: Long Quan and Huamin Qu'
+    // advisor: 'Advisors: Long Quan and Huamin Qu'
   },
   {
     name: 'Hong Kong University of Science and Technology',
@@ -64,6 +66,23 @@ const education = [
   }
  */
 const papers = [
+  {
+    author: 'Brian D. Hall, Yang Liu, Yvonne Jansen, Pierre Dragicevic, Fanny Chevalier, Matthew Kay',
+    title: 'A survey of tasks and visualizations in multiverse analysis reports',
+    venue: 'Computer Graphics Forum',
+    volume: 41,
+    number: 1,
+    pages: '402-426',
+    time: '2022'
+  },
+  {
+    author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
+    title: 'CORAL: COde RepresentAtion Learning with weakly-supervised transformers for analyzing data analysis',
+    venue: 'EPJ Data Science',
+    volume: 11,
+    number: 14,
+    time: '2022',
+  },
   {
     author: 'Martin Schweinsberg, Michael Feldman, Nicola Staub, Olmo R van den Akker, Robbie van Aert, Marcel ALM Van Assen, Yang Liu, Tim Althoff, Jeffrey Heer, Alex Kale, Zainab Mohamed, et al',
     title: 'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis',
@@ -119,10 +138,7 @@ const papers = [
 ]
 
 const papers_under_review = [
-]
-
-const papers_preprint = [
-  // {
+    // {
   //   author: 'Yang Liu, Tim Althoff, Jeffrey Heer',
   //   title: 'Approximation and progressive display of multiverse analyses',
   //   venue: 'IEEE Visualization Conference',
@@ -136,12 +152,9 @@ const papers_preprint = [
   //   time: '2021',
   //   status: 'under review'
   // },
-  {
-    author: 'Ge Zhang, Mike A. Merrill, Yang Liu, Jeffrey Heer, Tim Althoff',
-    title: 'CORAL: COde RepresentAtion Learning with weakly-supervised transformers for analyzing data analysis',
-    venue: 'arXiv preprint arXiv:2008.12828',
-    time: '2020',
-  },
+]
+
+const papers_preprint = [
   {
     author: 'Kanit Wongsuphasawat, Yang Liu, Jeffrey Heer',
     title: 'Goals, process, and challenges of exploratory data analysis: An interview study',
@@ -162,6 +175,16 @@ const papers_preprint = [
  */
 const work = [
   {
+    title: 'Google, YouTube Watch Next',
+    start: 'Jul. 2022',
+    end: '',
+    location: 'Mountain View, CA',
+    role: 'Software Engineer',
+    desc: [
+        'Improved the algorithms and backend serving systems that generate video suggestions on every YouTube watch page.'
+    ]
+  },
+  {
     title: 'Adobe Research, Breakthrough Interactions and Graphics Lab',
     start: 'Apr. 2020',
     end: 'Jul. 2020',
@@ -178,9 +201,9 @@ const work = [
     location: 'Hong Kong',
     role: 'Full Stack Developer',
     desc: [
-      'Designed, prototyped, and implemented a web platform from scratch as the very first developers in the team, which grew from 0 to more than 7000 activated users (Node.js, MongoDB, React, WebGL).',
-      'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map. The viewer employed level-of-detail rendering based on a quadtree to maintain interactive frame rates across all platforms, as well as various compression methods for fast loading.',
-      'Built a desktop viewer on Windows, macOS, and Linux for downloading 3D models and viewing offline.'
+      'Architected and implemented a web platform for creating and viewing 3D reconstruction models as the very first developers in the team. The platform grew from 0 to have more than 7000 activated users (JavaScript, Node.js, MongoDB, Vue.js, WebGL).',
+      // 'Developed a cross-platform web viewer for loading and viewing large-scale 3D reconstruction map. The viewer employed level-of-detail rendering based on a quadtree to maintain interactive frame rates across all platforms, as well as various compression methods for fast loading.',
+      // 'Built a desktop viewer on Windows, macOS, and Linux for downloading 3D models and viewing offline.'
     ]
   },
   {
@@ -190,9 +213,9 @@ const work = [
     location: 'Beijing, China',
     role: 'Software Development Engineer (SDE)',
     desc: [
-      'Developed a data cleaning pipeline to process large volumes of SharePoint server log (PB per log per day) and provided clean, valid data through data API for data analysis teams.',
-      'Implemented active monitoring to automatically check scheduled job running time and ensure data quality in the above pipeline, to meet the SLA level of 99.9%.',
-      'Maintained more than 100 daily jobs in Office data pipelines and provided support on data issues.'
+      'Developed a data cleaning pipeline to process large volumes of SharePoint server log and provided clean, valid data through API for data analysis teams (C#).',
+      // 'Implemented active monitoring to automatically check scheduled job running time and ensure data quality in the above pipeline, to meet the SLA level of 99.9%.',
+      // 'Maintained more than 100 daily jobs in Office data pipelines and provided support on data issues.'
     ]
   }
 ]
@@ -231,7 +254,7 @@ const service = [
     name: 'CSE Mentoring Program',
     time: '2019 - 2020',
     // location: 'University of Washington',
-    desc: ['Organized escape rooms, ice cream outings, and virtual dinners for my first year mentees.']
+    desc: ['Organized escape rooms, ice cream outings, and virtual dinners for first year mentees.']
   },
   {
     name: 'Co-Organizer: Interactive Systems Seminar',

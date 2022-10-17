@@ -13,7 +13,7 @@
     "prebuild": "rm -rf build && mkdir build && cp -R assets/ build",
     "webpack-dev": "webpack --config webpack.dev.js",
     "webpack-prod": "webpack --progress --hide-modules --config webpack.prod.js",
-    "start": "python -m SimpleHTTPServer 8080"
+    "start": "python3 -m http.server 8080"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

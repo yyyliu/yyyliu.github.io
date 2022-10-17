@@ -170,24 +170,26 @@ const projects = [
 
 const bio = [
   [
-    {text: 'Hello! I\'m a final year PhD student.'},
-    {text: 'I research information visualization, with the general goal of promoting robust data analysis.'},
-    {text: 'My current focus is to study how analyses might go awry and build new tools to improve reproducibility.'},
+    {text: 'Hello! I\'m a software engineer at Google, working on recommendation algorithms.'}
   ],
   [
-    {text: ' I\'m at the'},
-    {text: ' Interactive Data Lab', url: 'https://idl.cs.washington.edu/'},
-    {text: ' at the'},
+    {text: 'I received my Ph.D. degree from the'},
     {text: ' University of Washington', url: 'https://www.cs.washington.edu/'},
-    {text: ', advised by Prof.'},
+    {text: '. My advisor was '},
     {text: ' Jeffrey Heer', url: 'http://homes.cs.washington.edu/~jheer/'},
-    {text: '. In the past, I have been affiliated with the'},
-    {text: ' Hong Kong University of Science and Technology', url: 'http://www.ust.hk/'},
-    {text: ','},
-    {text: ' Microsoft China', url: 'https://www.microsoft.com/'},
-    {text: ', and'},
-    {text: ' Altizure', url: 'https://www.altizure.com/'},
-    {text: '.'}
+    {text: ' and I was a member of the '},
+    {text: 'Interactive Data Lab', url: 'https://idl.cs.washington.edu/'},
+    {text: '. My Ph.D. work is on information visualization, with the general goal of promoting robust data analysis.'},
+    {text: 'My focus is to study how analyses might go awry and build new tools to improve reproducibility.'},
+  ],
+  [
+      {text: 'In the past, I have been affiliated with the'},
+      {text: ' Hong Kong University of Science and Technology', url: 'http://www.ust.hk/'},
+      {text: ','},
+      {text: ' Microsoft China', url: 'https://www.microsoft.com/'},
+      {text: ', and'},
+      {text: ' Altizure', url: 'https://www.altizure.com/'},
+      {text: '.'}
   ]
 ]
 

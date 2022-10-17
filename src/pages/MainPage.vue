@@ -6,13 +6,13 @@
         <div class="ml-3 mr-3 font-weight-bold">
           <a href="/" class="no-link">Yang Liu</a>
         </div>
-        <div class="mr-3 text-bold d-none d-sm-block">
-          <small><a href="/#/cv" target="_blank" class="no-link">CV</a></small>
-          <small class="ml-3 cursor-pointer" @click="scrollTo('pubs')">
-            Publications</small>
-          <small class="ml-3 cursor-pointer" @click="scrollTo('projects')">
-            Projects</small>
-        </div>
+<!--        <div class="mr-3 text-bold d-sm-block d-none">-->
+<!--          <small><a href="/#/cv" target="_blank" class="no-link">CV</a></small>-->
+<!--          <small class="ml-3 cursor-pointer" @click="scrollTo('pubs')">-->
+<!--            Publications</small>-->
+<!--          <small class="ml-3 cursor-pointer" @click="scrollTo('projects')">-->
+<!--            Projects</small>-->
+<!--        </div>-->
       </div>
     </div>
     <!-- Content -->
@@ -45,9 +45,9 @@
                 <i class="far fa-envelope mr-1"></i>
                 Email</b-button>
               <b-button class="ml-2" squared size="sm" variant="outline-info"
-                        href="/#/cv" target="_blank">
-                <i class="far fa-file-pdf mr-1"></i>
-                Curriculum Vitae</b-button>
+                        href="https://www.linkedin.com/in/yliu0/" target="_blank">
+                <i class="fab fa-linkedin mr-1"></i>
+                LinkedIn</b-button>
               <b-button class="ml-2" squared size="sm" variant="outline-secondary"
                         href="https://github.com/yyyliu" target="_blank">
                 <i class="fab fa-github mr-1"></i>
@@ -108,7 +108,7 @@
         <div class="mt-3 mt-md-4"></div>
         <hr>
         <div class="m-3 text-center text-muted text-xs">
-          Copyright © 2016-2020 Yang Liu
+          Copyright © 2016-{{current_year}} Yang Liu
         </div>
         <div class="mt-5"></div>
       </div>
@@ -124,7 +124,8 @@
       return {
         publications: publications,
         projects: projects,
-        bio: bio
+        bio: bio,
+        current_year: new Date().getFullYear()
       }
     },
     methods: {
